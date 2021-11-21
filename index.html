@@ -4,7 +4,7 @@
             <meta charset="utf-8"/>
             <link rel=" stylesheet" href="Css/styles.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" 
-                integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+                integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">                   
             <title>site de commande de repas en ligne</title>
         </head>
         <body>
@@ -20,24 +20,32 @@
                         </div>
                         <h2 class="h2reservez">Réservez le menu qui vous convient</h2>
                         <span class="decouvrez">Découvrez des restaurants d'exception, sélectionnés par nos soins</span>
-                        <button class="explorez">Explorez nos restaurants</button>       
+                        <button class="explorez" type="button">Explorez nos restaurants</button>       
                     </div>
                     <div class="selection">
                         <h2 class="h2fonctionnement">Fonctionnement</h2>
-                        <ol>
-                            <li>
-                                <i class="fas fa-mobile-alt"></i>
-                                <span class="textétape">Choisissez un restaurant</span>
-                            </li>
-                            <li>
-                                <i class="fa fa-list-ul" aria-hidden="true"></i>
-                                <span class="textétape">Composez votre menu</span>
-                            </li>
-                            <li>
-                                <i class="fas fa-store"></i>
-                                <span class="textétape">Dégustez au restaurant</span>
-                            </li>
-                        </ol>
+                        <div class="filtres">
+                            <ol>
+                                <li>
+                                    <div class="iconefonct">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <span class="textétape">Choisissez un restaurant</span>
+                                </li>
+                                <li>
+                                    <div class="iconefonct">
+                                        <i class="fa fa-list-ul" aria-hidden="true"></i>
+                                    </div>
+                                    <span class="textétape">Composez votre menu</span>
+                                </li>
+                                <li>
+                                    <div class="iconefonct">
+                                        <i class="fas fa-store"></i>
+                                    </div>
+                                    <span class="textétape">Dégustez au restaurant</span>
+                                </li>
+                            </ol>
+                        </div>
                     </div>
                 </nav>
                 <section class="restaurants">
@@ -46,7 +54,7 @@
                         <a class="carte" href="/La-palette-du-goût">
                             <figure>
                                 <img class="photoresto" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo menu">
-                                <span class="sticker">Nouveau</span>
+                                <span class="sticker">Nouveau</span>                      
                                 <figcaption class="figresto">
                                     <h3 class="nomsresto">La palette du goût</h3>
                                     <span>Ménilmontant</span>

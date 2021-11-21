@@ -1,67 +1,94 @@
+@charset "UTF-8";
 /*propriètés générales*/
+body {
+  margin: 0px;
+  width: 100%;
+}
 
-body{
-    margin:0px;
-    width:100%;
+.container {
+  max-width: 1420px;
+  margin: auto;
+  width: 80%;
 }
-.container{
-    max-width:1420px;
-    margin:auto;
-    width:80%;
+
+* {
+  box-sizing: border-box;
 }
-*{
-    box-sizing:border-box;
-}
-a{
-    color:inherit;
-    text-decoration: none;
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /*version mobile*/
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    padding: 20px;
+  }
 
-@media screen and (max-width:768px){
-        
-    /*header*/
-    header{
-        display:flex;
-        justify-content:center;
-        width: 100%;
-    }
-    h1{
-        display:flex;
-        justify-content:center;
-        font-weight:bold;
-    }
-    .trouvestaville{
-    
-        display:flex;
-        flex-direction:column;
-        background-color: rgb(250, 246, 246);
-    }
-    .location{
-        display:flex;
-        justify-content:center;
-        background-color: rgb(230, 220, 220);
-        border-top:3px solid grey
-    }
-    .autour{
-        margin-left:10px;
-    }
-    .h2reservez{
-        display:flex;
-        justify-content:center;
-        
-    }
-    .decouvrez{
-        display:flex;
-        justify-content:center;
-        
-    }
-    .explorez{
-        width:60%;
-        display:flex;
-        justify-content:center;
-        
-       
-    }
+  /*header*/
+  header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  /*navigation*/
+  .trouvestaville {
+    display: flex;
+    flex-direction: column;
+    background-color: #729396fd;
+  }
+
+  .location {
+    display: flex;
+    justify-content: center;
+    background-color: #e6dcdc;
+    border-top: 3px solid grey;
+  }
+
+  .autour {
+    margin-left: 10px;
+  }
+
+  .h2reservez {
+    display: flex;
+    justify-content: center;
+  }
+
+  .decouvrez {
+    display: flex;
+    justify-content: center;
+  }
+
+  .explorez {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*selection*/
+  .filtres {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ol {
+    list-style-type: none;
+    width: 100%;
+    margin: 0px;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    background-color: #faf6f6;
+  }
 }
