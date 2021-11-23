@@ -1,94 +1,107 @@
+@charset "UTF-8";
 /*propriètés générales*/
+body {
+  margin: 0px;
+  width: 100%;
+}
 
-body{
-    margin:0px;
-    width:100%;
+.container {
+  max-width: 1420px;
+  margin: auto;
+  width: 80%;
 }
-.container{
-    max-width:1420px;
-    margin:auto;
-    width:80%;
+
+* {
+  box-sizing: border-box;
 }
-*{
-    box-sizing:border-box;
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
-a{
-    color:inherit;
-    text-decoration: none;
-}
+
+$prim-color:#9356DC;
+$second-color:#FF79DA;
+$tert-color:#99E2D0;
+$quat-color:hsla(187, 25%, 94%, 0.992);
+
 /*version mobile*/
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    padding: 20px;
+  }
 
-@media screen and (max-width:768px){
-    $primaire:#9356DC;
-    $secondaire:#FF79DA;
-    $tertiaire:#99E2D0;
-    $quatrieme:#729396fd;
-    .container{
-        width:80%;
-        padding:20px;
-    }   
-    /*header*/
-    header{
-        display:flex;
-        justify-content:center;
-        width: 100%;
-    }
-    h1{
-        display:flex;
-        justify-content:center;
-        font-weight:bold;
-    }
-    /*navigation*/
-    .trouvestaville{
+  /*header*/
+  header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
+
+  /*navigation*/
+  .trouvestaville {
+    display: flex;
+    flex-direction: column;
+    background-color: $quat-color;
+    padding:20px 20px 50px 20px;
+    border-top: 3px solid rgb(187, 186, 186);
+  }
+
+  .location {
+    display: flex;
+    justify-content: center;
+    background-color: #f3f2f2;
+  }
+
+  .autour {
+    margin-left: 10px;
+  }
+
+  .h2reservez {
+    display: flex;
+    justify-content: center;
     
-        display:flex;
-        flex-direction:column;
-        background-color: $quatrieme;
+  }
+
+  .decouvrez {
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .explorez {
+    display:flex;
+    justify-content:center;
+    width:250px;
+    
+    margin:auto;
+    background-color: $second-color;
+    border-radius:30px;
+  }
+
+
+  /*selection*/
+  .filtres{      
+    display: flex;
+    flex-direction: column;
+  }
+    ol {
+      list-style-type: none;
+      width: 100%;
+      margin: 0px;
+      padding:0px;
     }
-    .location{
-        display:flex;
-        justify-content:center;
-        background-color: rgb(230, 220, 220);
-        border-top:3px solid grey
+      li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #faf6f6;
     }
-    .autour{
-        margin-left:10px;
-    }
-    .h2reservez{
-        display:flex;
-        justify-content:center;
-        
-    }
-    .decouvrez{
-        display:flex;
-        justify-content:center;
-        
-    }
-    .explorez{
-        
-        display:flex;
-        justify-content:center;    
-    }
-    /*selection*/
-    .filtres{
-        display:flex;
-        flex-direction:column;  
-    }
-    ol{
-        list-style-type: none;
-        width:100%;
-        margin:0px;
-    }
-    li{
-        display:flex;
-        justify-content:center;  
-        width:90%;
-        background-color: rgb(250, 246, 246);
-         
-    }
-     
-     
-         
-     
-     
 }
