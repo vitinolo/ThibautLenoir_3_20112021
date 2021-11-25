@@ -1,5 +1,17 @@
 @charset "UTF-8";
 /*propriètés générales*/
+@font-face {
+  font-family:"Shrikhand-regular";
+  src:url("/ThibautLenoir_3_20112021/css/Shrikhand-regular.otf") format("otf");
+  font-family: "roboto";
+  src:url("/ThibautLenoir_3_20112021/css/roboto.ttf") format("ttf");
+} 
+
+$prim-color:#9356DC;
+$second-color:#FF79DA;
+$tert-color:#99E2D0;
+$quat-color:rgba(241, 245, 244, 0.992);
+
 body {
   margin: 0px;
   width: 100%;
@@ -20,88 +32,122 @@ a {
   text-decoration: none;
 }
 
-$prim-color:#9356DC;
-$second-color:#FF79DA;
-$tert-color:#99E2D0;
-$quat-color:hsla(187, 25%, 94%, 0.992);
 
 /*version mobile*/
 @media screen and (max-width: 768px) {
-  .container {
-    width: 80%;
-    padding: 20px;
-  }
-
+  
   /*header*/
   header {
     display: flex;
     justify-content: center;
     width: 100%;
-  }
-
-  h1 {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-  }
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      width:150px;
+      font-family:"Shrikhand-regular";
+      }
+    }
 
   /*navigation*/
   .trouvestaville {
     display: flex;
     flex-direction: column;
+    justify-content:center;
     background-color: $quat-color;
-    padding:20px 20px 50px 20px;
     border-top: 3px solid rgb(187, 186, 186);
-  }
-
-  .location {
-    display: flex;
-    justify-content: center;
-    background-color: #f3f2f2;
-  }
-
-  .autour {
-    margin-left: 10px;
+    .location {
+      display: flex;
+      justify-content: center;
+      background-color: #dad6d6;
+      padding:15px;
+      .autour {
+        font-family:"roboto" ;
+        font-size: 15px;
+        margin-left: 10px;
+      }
+    }
   }
 
   .h2reservez {
     display: flex;
     justify-content: center;
-    
+    padding:20px; 
+    margin:0px;
   }
 
   .decouvrez {
     display: flex;
     justify-content: center;
-    
-  }
+    padding:0px 20px 20px 20px;
+    margin-left:50px;
+    }
 
   .explorez {
     display:flex;
-    justify-content:center;
-    width:250px;
-    
+    justify-content: center;
+    width:200px;
+    border:none;
+    padding:15px;
     margin:auto;
-    background-color: $second-color;
+    margin-bottom:40px;
+    color:white;
+    background: linear-gradient($second-color,$prim-color);
     border-radius:30px;
-  }
-
+    .textexplore{
+      color:white;
+      }
+    }
 
   /*selection*/
+  .h2fonctionnement{
+    margin-left:20px;
+  }
   .filtres{      
     display: flex;
     flex-direction: column;
-  }
     ol {
       list-style-type: none;
       width: 100%;
       margin: 0px;
       padding:0px;
-    }
       li {
         display: flex;
         justify-content: center;
-        width: 100%;
-        background-color: #faf6f6;
+        width: 85%;
+        margin:auto;
+        margin-bottom:10px;
+        padding:15px;
+        background-color: $quat-color;
+        border-radius:20px;
+        box-shadow:2px 3px 3px rgb(216, 214, 214);
+        }
+      }
     }
+  .rond{
+    position:relative;
+    right:70px;
+    border-radius:100px;
+    background-color: $prim-color;
+    width:20px;
+    .nombre{
+      display:flex;
+      justify-content:center;
+      color:white;
+    }
+  }
+  .iconefonct i{
+    display:flex;
+    justify-content:center;
+    margin:0px;
+    width:20px;
+    height:20px;
+    position:relative;
+    right:40px;
+  }
+  /*restaurants*/
+  .restaurants{
+    background-color: $quat-color;
+  }
 }
