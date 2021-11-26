@@ -1,12 +1,14 @@
 @charset "UTF-8";
 /*propriètés générales*/
 @font-face {
-  font-family:"Shrikhand-regular";
-  src:url("/ThibautLenoir_3_20112021/css/Shrikhand-regular.otf") format("otf");
-  font-family: "roboto";
-  src:url("/ThibautLenoir_3_20112021/css/roboto.ttf") format("ttf");
-} 
-
+  font-family: "Shrikhand"; 
+  src: url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot");
+  src: url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot?#iefix") format("embedded-opentype"),
+       url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff2") format("woff2"), 
+       url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff") format("woff"), 
+       url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.ttf") format("truetype"), 
+       url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.svg#Shrikhand") format("svg");
+       }
 $prim-color:#9356DC;
 $second-color:#FF79DA;
 $tert-color:#99E2D0;
@@ -20,7 +22,7 @@ body {
 .container {
   max-width: 1420px;
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 
 * {
@@ -35,18 +37,17 @@ a {
 
 /*version mobile*/
 @media screen and (max-width: 768px) {
-  
   /*header*/
   header {
     display: flex;
     justify-content: center;
     width: 100%;
     h1 {
+      @import url(//db.onlinewebfonts.com/c/8fbe9c7daaf83c054fb161fa16ccfda9?family=Shrikhand);
       display: flex;
       justify-content: center;
       font-weight: bold;
       width:150px;
-      font-family:"Shrikhand-regular";
       }
     }
 
@@ -97,10 +98,14 @@ a {
     border-radius:30px;
     .textexplore{
       color:white;
+      margin:0px;
       }
     }
 
   /*selection*/
+  .selection{
+    padding:0px 0px 20px 0px;
+  }
   .h2fonctionnement{
     margin-left:20px;
   }
@@ -110,24 +115,32 @@ a {
     ol {
       list-style-type: none;
       width: 100%;
-      margin: 0px;
+      margin: auto;
       padding:0px;
       li {
         display: flex;
         justify-content: center;
         width: 85%;
-        margin:auto;
-        margin-bottom:10px;
+        margin:0px 0px 20px 30px;
         padding:15px;
         background-color: $quat-color;
         border-radius:20px;
         box-shadow:2px 3px 3px rgb(216, 214, 214);
+        .iconefonct{
+          position:relative;
+          right:60px;
         }
       }
     }
+  }
+  .iconefonct1{
+    position:relative;
+    right:55px;
+    margin:0px;
+  }
   .rond{
     position:relative;
-    right:70px;
+    right:90px;
     border-radius:100px;
     background-color: $prim-color;
     width:20px;
@@ -137,17 +150,91 @@ a {
       color:white;
     }
   }
-  .iconefonct i{
-    display:flex;
-    justify-content:center;
-    margin:0px;
-    width:20px;
-    height:20px;
-    position:relative;
-    right:40px;
-  }
+  
+  
+  
   /*restaurants*/
+  .h2restaurants{
+    margin:0px 0px 20px 20px;
+  }
   .restaurants{
     background-color: $quat-color;
+    width:100%;
+    padding:30px 0px 40px 0px;
+    .cartesresto{
+      width:100%;
+      .carte{
+        display:block;
+        width:100%;
+        margin:0px;
+      }
+    }
+  }
+  .figure{
+    margin:0px 15px 15px 15px;
+    padding:0px;
+    background-color:white;
+    border-radius: 15px 15px 15px 15px;
+    position:relative;
+    .photoresto{
+      display:flex;
+      object-fit: cover;
+      width:100%;
+      max-height:200px;
+      border-radius:15px 15px 0px 0px;
+    }
+  }
+  .sticker{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position:absolute;
+    width:70px;
+    height:25px;
+    top:5%;
+    left:75%;
+    background-color:$tert-color;
+    color:#318570;
+    font-weight: bold;
+    border-radius:2px;
+  }
+  .figresto{
+    position:relative;
+    padding-bottom:10px;
+    .heart{
+      position:absolute;
+      right:10px;
+      top:10px;
+      width:25px;
+      height:25px;
+    }
+  }
+  .nomsresto{
+    margin:0px;
+    padding:10px 0px 0px 10px;
+  }
+  .villerest{
+    margin:0px 0px 10px 10px;
+    
+
+  }
+  /*footer*/
+  .footer{
+    margin:auto;
+    width:90%;
+    background-color:rgb(44, 43, 43);
+    color:white;
+    ul{
+      list-style-type:none;
+      padding-left: 20px;
+      padding-bottom:30px;
+      li{
+        padding:0px 0px 10px 0px;
+      }
+    }  
+  }
+  .h3footer{
+    padding: 20px 0px 0px 20px;
+    margin:0px;
   }
 }
