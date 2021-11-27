@@ -2,12 +2,12 @@
 /*propriètés générales*/
 @font-face {
   font-family: "Shrikhand"; 
-  src: url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot");
-  src: url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot?#iefix") format("embedded-opentype"),
-       url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff2") format("woff2"), 
-       url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff") format("woff"), 
-       url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.ttf") format("truetype"), 
-       url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.svg#Shrikhand") format("svg");
+  src: url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot");
+  src: url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot?#iefix") format("embedded-opentype"),
+       url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff2") format("woff2"), 
+       url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff") format("woff"), 
+       url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.ttf") format("truetype"), 
+       url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.svg#Shrikhand") format("svg");
        }
 $prim-color:#9356DC;
 $second-color:#FF79DA;
@@ -42,14 +42,17 @@ a {
     display: flex;
     justify-content: center;
     width: 100%;
-    h1 {
-      @import url(//db.onlinewebfonts.com/c/8fbe9c7daaf83c054fb161fa16ccfda9?family=Shrikhand);
-      display: flex;
+    h1{
+      object-fit:cover;
+      display:flex;
       justify-content: center;
-      font-weight: bold;
-      width:150px;
+      margin:20px 0px 20px 0px;
+      max-width:70%;
+      img{
+        max-width:250px;
       }
     }
+  }
 
   /*navigation*/
   .trouvestaville {
@@ -88,19 +91,24 @@ a {
   .explorez {
     display:flex;
     justify-content: center;
-    width:200px;
+    width:220px;
     border:none;
     padding:15px;
     margin:auto;
     margin-bottom:40px;
-    color:white;
     background: linear-gradient($second-color,$prim-color);
     border-radius:30px;
-    .textexplore{
-      color:white;
-      margin:0px;
-      }
+    box-shadow:2px 3px 3px grey;
+    &:hover{
+      background:linear-gradient(#f381d3,#a66cec);
+      box-shadow:2px 3px 3px rgb(63, 62, 62);
     }
+  }
+  .textexplore{
+    color:white;
+    margin:0px;
+    font-weight: bold;
+  }
 
   /*selection*/
   .selection{
@@ -127,20 +135,15 @@ a {
         border-radius:20px;
         box-shadow:2px 3px 3px rgb(216, 214, 214);
         .iconefonct{
-          position:relative;
-          right:60px;
+          position:absolute;
+          left:20%;
         }
       }
     }
   }
-  .iconefonct1{
-    position:relative;
-    right:55px;
-    margin:0px;
-  }
   .rond{
-    position:relative;
-    right:90px;
+    position:absolute;
+    left:10%;
     border-radius:100px;
     background-color: $prim-color;
     width:20px;
@@ -149,9 +152,7 @@ a {
       justify-content:center;
       color:white;
     }
-  }
-  
-  
+  }         
   
   /*restaurants*/
   .h2restaurants{
@@ -171,10 +172,10 @@ a {
     }
   }
   .figure{
-    margin:0px 15px 15px 15px;
-    padding:0px;
+    margin:0px 15px 30px 15px;
     background-color:white;
     border-radius: 15px 15px 15px 15px;
+    box-shadow:2px 3px 5px rgb(216, 214, 214) ;
     position:relative;
     .photoresto{
       display:flex;
@@ -192,7 +193,7 @@ a {
     width:70px;
     height:25px;
     top:5%;
-    left:75%;
+    right:5%;
     background-color:$tert-color;
     color:#318570;
     font-weight: bold;
@@ -203,10 +204,8 @@ a {
     padding-bottom:10px;
     .heart{
       position:absolute;
-      right:10px;
-      top:10px;
-      width:25px;
-      height:25px;
+      right:5%;
+      top:30%; 
     }
   }
   .nomsresto{
@@ -234,7 +233,34 @@ a {
     }  
   }
   .h3footer{
-    padding: 20px 0px 0px 20px;
+    padding:20px 0px 0px 20px;
+    max-width:70%;
+    color:white;
+    font-family: Shrikhand;
+  }
+  /*menus resto*/
+  .containermenu{
+    background-color:rgba(241, 245, 244, 0.992);
+    max-width: 1420px;
+    margin: auto;
+    width: 90%;
+  }
+  .titreresto{
+    display:flex;
+    justify-content: center;
+    margin:2% 20% 2% 30%;
+    max-width:200px;
+  }
+  figure{
+    width:100%;
     margin:0px;
+  }
+  .photomenu{
+    object-fit:cover;
+    width:100%;
+    max-height:200px;
+  }
+  .h2nomresto{
+    font-weight: bold;
   }
 }

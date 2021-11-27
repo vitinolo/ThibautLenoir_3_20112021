@@ -2,8 +2,8 @@
 /*propriètés générales*/
 @font-face {
   font-family: "Shrikhand";
-  src: url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot");
-  src: url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff") format("woff"), url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.svg#Shrikhand") format("svg");
+  src: url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot");
+  src: url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff") format("woff"), url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.svg#Shrikhand") format("svg");
 }
 body {
   margin: 0px;
@@ -34,11 +34,15 @@ a {
     width: 100%;
   }
   header h1 {
-    @import url(//db.onlinewebfonts.com/c/8fbe9c7daaf83c054fb161fa16ccfda9?family=Shrikhand);
+    -o-object-fit: cover;
+       object-fit: cover;
     display: flex;
     justify-content: center;
-    font-weight: bold;
-    width: 150px;
+    margin: 20px 0px 20px 0px;
+    max-width: 70%;
+  }
+  header h1 img {
+    max-width: 250px;
   }
 
   /*navigation*/
@@ -78,18 +82,24 @@ a {
   .explorez {
     display: flex;
     justify-content: center;
-    width: 200px;
+    width: 220px;
     border: none;
     padding: 15px;
     margin: auto;
     margin-bottom: 40px;
-    color: white;
     background: linear-gradient(#FF79DA, #9356DC);
     border-radius: 30px;
+    box-shadow: 2px 3px 3px grey;
   }
-  .explorez .textexplore {
+  .explorez:hover {
+    background: linear-gradient(#f381d3, #a66cec);
+    box-shadow: 2px 3px 3px #3f3e3e;
+  }
+
+  .textexplore {
     color: white;
     margin: 0px;
+    font-weight: bold;
   }
 
   /*selection*/
@@ -122,19 +132,13 @@ a {
     box-shadow: 2px 3px 3px #d8d6d6;
   }
   .filtres ol li .iconefonct {
-    position: relative;
-    right: 60px;
-  }
-
-  .iconefonct1 {
-    position: relative;
-    right: 55px;
-    margin: 0px;
+    position: absolute;
+    left: 20%;
   }
 
   .rond {
-    position: relative;
-    right: 90px;
+    position: absolute;
+    left: 10%;
     border-radius: 100px;
     background-color: #9356DC;
     width: 20px;
@@ -165,10 +169,10 @@ a {
   }
 
   .figure {
-    margin: 0px 15px 15px 15px;
-    padding: 0px;
+    margin: 0px 15px 30px 15px;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
+    box-shadow: 2px 3px 5px #d8d6d6;
     position: relative;
   }
   .figure .photoresto {
@@ -188,7 +192,7 @@ a {
     width: 70px;
     height: 25px;
     top: 5%;
-    left: 75%;
+    right: 5%;
     background-color: #99E2D0;
     color: #318570;
     font-weight: bold;
@@ -201,10 +205,8 @@ a {
   }
   .figresto .heart {
     position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 25px;
-    height: 25px;
+    right: 5%;
+    top: 30%;
   }
 
   .nomsresto {
@@ -234,6 +236,39 @@ a {
 
   .h3footer {
     padding: 20px 0px 0px 20px;
+    max-width: 70%;
+    color: white;
+    font-family: Shrikhand;
+  }
+
+  /*menus resto*/
+  .containermenu {
+    background-color: rgba(241, 245, 244, 0.992);
+    max-width: 1420px;
+    margin: auto;
+    width: 90%;
+  }
+
+  .titreresto {
+    display: flex;
+    justify-content: center;
+    margin: 2% 20% 2% 30%;
+    max-width: 200px;
+  }
+
+  figure {
+    width: 100%;
     margin: 0px;
+  }
+
+  .photomenu {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    max-height: 200px;
+  }
+
+  .h2nomresto {
+    font-weight: bold;
   }
 }/*# sourceMappingURL=styles.css.map */
