@@ -1,22 +1,17 @@
 @charset "UTF-8";
 /*propriètés générales*/
-@font-face {
-  font-family: "Shrikhand"; 
-  src: url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot");
-  src: url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.eot?#iefix") format("embedded-opentype"),
-       url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff2") format("woff2"), 
-       url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.woff") format("woff"), 
-       url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.ttf") format("truetype"), 
-       url("https://db.onlinewebfonts.com/t/8fbe9c7daaf83c054fb161fa16ccfda9.svg#Shrikhand") format("svg");
-       }
+
 $prim-color:#9356DC;
 $second-color:#FF79DA;
 $tert-color:#99E2D0;
 $quat-color:rgba(241, 245, 244, 0.992);
-
+@mixin bold {
+  font-weight: bold;
+}
 body {
   margin: 0px;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -38,6 +33,7 @@ a {
 /*version mobile*/
 @media screen and (max-width: 768px) {
   /*header*/
+
   header {
     display: flex;
     justify-content: center;
@@ -134,6 +130,7 @@ a {
         background-color: $quat-color;
         border-radius:20px;
         box-shadow:2px 3px 3px rgb(216, 214, 214);
+        @include bold;
         .iconefonct{
           position:absolute;
           left:20%;
@@ -229,14 +226,20 @@ a {
       padding-bottom:30px;
       li{
         padding:0px 0px 10px 0px;
+        .prodev{
+          margin-left:5px;
+        }
       }
     }  
+  }
+  .iconefoot{
+    width:20px;
   }
   .h3footer{
     padding:20px 0px 0px 20px;
     max-width:70%;
     color:white;
-    font-family: Shrikhand;
+    font-family: 'Shrikhand', cursive;
     margin:0px;
   }
   /*menus resto*/
@@ -249,6 +252,7 @@ a {
   .titrefleche{
     display:flex;
     padding:10px 10px 10px 10px;
+    width:100%;
     .fleche{
       display:flex;
       align-items:center;
@@ -258,21 +262,22 @@ a {
     display:flex;
     justify-content: center;
     margin:auto;
+    font-family: 'Shrikhand', cursive;
   } 
   /*header*/  
   figure{
-    width:100%;
     margin:0px;
     .photomenu{
       object-fit:cover;
       width:100%;
-      max-height:200px;
+      
     }
   }
   .restocoeur{
     display:flex;
     justify-content: space-between;
     margin:10px 30px 10px 10px;
+    border-radius:20px 20px 0px 0px;
     .coeur{
       display:flex;
       align-items: center;
@@ -308,10 +313,12 @@ a {
     h4{
       display:flex;
       margin:0px;
+      font-weight:normal ;
     }
   }
   .prix{
-    display:flex;   
+    display:flex; 
+    @include bold; 
   }
   .categorie{
     border-bottom:3px solid $tert-color ;
