@@ -15,9 +15,9 @@ body {
 }
 
 .container {
-  max-width: 1420px;
+  max-width:900px;
   margin: auto;
-  width: 90%;
+  width: 100%;
 }
 
 * {
@@ -30,315 +30,330 @@ a {
 }
 
 
-/*version mobile*/
-@media screen and (max-width: 768px) {
-  /*header*/
 
-  header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    h1{
-      object-fit:cover;
-      display:flex;
-      justify-content: center;
-      margin:20px 0px 20px 0px;
-      max-width:70%;
-      img{
-        max-width:250px;
-      }
-    }
-  }
+/*header*/
 
-  /*navigation*/
-  .trouvestaville {
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    background-color: $quat-color;
-    border-top: 3px solid rgb(187, 186, 186);
-    .location {
-      display: flex;
-      justify-content: center;
-      background-color: #dad6d6;
-      padding:15px;
-      .autour {
-        font-family:"roboto" ;
-        font-size: 15px;
-        margin-left: 10px;
-      }
-    }
-  }
-
-  .h2reservez {
-    display: flex;
-    justify-content: center;
-    padding:20px; 
-    margin:0px;
-  }
-
-  .decouvrez {
-    display: flex;
-    justify-content: center;
-    padding:0px 20px 20px 20px;
-    margin-left:50px;
-    }
-
-  .explorez {
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  h1{
+    object-fit:cover;
     display:flex;
     justify-content: center;
-    width:220px;
-    border:none;
-    padding:15px;
-    margin:auto;
-    margin-bottom:40px;
-    background: linear-gradient($second-color,$prim-color);
-    border-radius:30px;
-    box-shadow:2px 3px 10px grey;
-    &:hover{
-      background:linear-gradient(#f381d3,#a66cec);
-      box-shadow:2px 3px 5px rgb(63, 62, 62);
-    }
-  }
-  .textexplore{
-    color:white;
-    margin:0px;
-    font-weight: bold;
-  }
-
-  /*selection*/
-  .selection{
-    padding:0px 0px 20px 0px;
-  }
-  .h2fonctionnement{
-    margin-left:20px;
-  }
-  .filtres{      
-    display: flex;
-    flex-direction: column;
-    ol {
-      list-style-type: none;
-      width: 100%;
-      margin: auto;
-      padding:0px;
-      li {
-        display: flex;
-        justify-content: center;
-        width: 85%;
-        margin:0px 0px 20px 30px;
-        padding:15px;
-        background-color: $quat-color;
-        border-radius:20px;
-        box-shadow:2px 3px 3px rgb(216, 214, 214);
-        @include bold;
-        .iconefonct{
-          position:absolute;
-          left:20%;
-        }
-      }
-    }
-  }
-  .rond{
-    position:absolute;
-    left:10%;
-    border-radius:100px;
-    background-color: $prim-color;
-    width:20px;
-    .nombre{
-      display:flex;
-      justify-content:center;
-      color:white;
-    }
-  }         
-  
-  /*restaurants*/
-  .h2restaurants{
-    margin:0px 0px 20px 20px;
-  }
-  .restaurants{
-    background-color: $quat-color;
-    width:100%;
-    padding:30px 0px 40px 0px;
-    .cartesresto{
-      width:100%;
-      .carte{
-        display:block;
-        width:100%;
-        margin:0px;
-      }
-    }
-  }
-  .figure{
-    margin:0px 15px 30px 15px;
-    background-color:white;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow:2px 3px 5px rgb(216, 214, 214) ;
-    position:relative;
-    .photoresto{
-      display:flex;
-      object-fit: cover;
-      width:100%;
-      max-height:200px;
-      border-radius:15px 15px 0px 0px;
-    }
-  }
-  .sticker{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    position:absolute;
-    width:70px;
-    height:25px;
-    top:5%;
-    right:5%;
-    background-color:$tert-color;
-    color:#318570;
-    font-weight: bold;
-    border-radius:2px;
-  }
-  .figresto{
-    position:relative;
-    padding-bottom:10px;
-    .heart{
-      position:absolute;
-      right:5%;
-      top:30%; 
-    }
-  }
-  .nomsresto{
-    margin:0px;
-    padding:10px 0px 0px 10px;
-  }
-  .villerest{
-    margin:0px 0px 10px 10px;
-    
-
-  }
-  /*footer*/
-  .footer{
-    margin:auto;
-    width:90%;
-    background-color:rgb(44, 43, 43);
-    color:white;
-    ul{
-      list-style-type:none;
-      padding-left: 20px;
-      padding-bottom:30px;
-      li{
-        padding:0px 0px 10px 0px;
-        .prodev{
-          margin-left:5px;
-        }
-      }
-    }  
-  }
-  .iconefoot{
-    width:20px;
-  }
-  .h3footer{
-    padding:20px 0px 0px 20px;
+    margin:20px 0px 20px 0px;
     max-width:70%;
-    color:white;
-    font-family: 'Shrikhand', cursive;
-    margin:0px;
+    img{
+      max-width:250px;
+    }
   }
-  /*menus resto*/
-  .containermenu{
-    background-color:rgba(241, 245, 244, 0.992);
-    max-width: 1420px;
+}
+
+/*navigation*/
+.trouvestaville {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  background-color: $quat-color;
+  border-top: 3px solid rgb(187, 186, 186);
+  .location {
+    display: flex;
+    justify-content: center;
+    position:relative;
+    justify-content: center;
+    background-color: #dad6d6;
+    .iconloc{
+      position:relative;
+      left:20px;
+      top:12px;
+    }
+  }
+}
+.autour {
+  max-width:150px;
+  padding:15px;
+  font-family:"roboto" ;
+  text-align:center;
+  @include bold;
+  background-color:#dad6d6 ;
+  border:none;
+}
+
+.h2reservez {
+  display: flex;
+  justify-content: center;
+  padding:20px; 
+  margin:0px;
+}
+
+.decouvrez {
+  display: flex;
+  justify-content: center;
+  padding:0px 20px 20px 20px;
+  margin-left:50px;
+  }
+
+.explorez {
+  display:flex;
+  justify-content: center;
+  max-width:220px;
+  border:none;
+  padding:15px;
+  margin:auto;
+  margin-bottom:40px;
+  background: linear-gradient($second-color,$prim-color);
+  border-radius:30px;
+  box-shadow:2px 3px 10px grey;
+  background:linear-gradient(#f381d3,#a66cec);
+  &:hover{
+    box-shadow:2px 3px 5px rgb(63, 62, 62);
+  }
+}
+.textexplore{
+  color:white;
+  margin:0px;
+  font-weight: bold;
+}
+
+/*selection*/
+.selection{
+  padding:0px 0px 20px 0px;
+}
+.h2fonctionnement{
+  margin-left:20px;
+}
+.filtres{      
+  display: flex;
+  ol {
+    display:flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
     margin: auto;
-    width: 90%;
-  }
-  .titrefleche{
-    display:flex;
-    padding:10px 10px 10px 10px;
-    width:100%;
-    .fleche{
-      display:flex;
-      align-items:center;
-    }
-  }
-  .titreresto{
-    display:flex;
-    justify-content: center;
-    margin:auto;
-    font-family: 'Shrikhand', cursive;
-  } 
-  /*header*/  
-  figure{
-    margin:0px;
-    .photomenu{
-      object-fit:cover;
-      width:100%;
-      
-    }
-  }
-  .restocoeur{
-    display:flex;
-    justify-content: space-between;
-    margin:10px 30px 10px 10px;
-    border-radius:20px 20px 0px 0px;
-    .coeur{
-      display:flex;
+    padding:15px;
+    li {
+      position:relative;
+      display: flex;
+      justify-content: center; 
       align-items: center;
-      margin:0px;
-    }
-  }
-  .h2nomresto{
-    display:flex;
-    align-items: center;
-    font-weight: bold;
-    margin:0px;
-  }
-  /*entrées plats desserts*/
-  .entrees, .plats, .desserts{
-    padding:10px;
-    ul{
-      padding:0px;
-      li{
-        list-style-type: none;
-        background-color:white ;
-        border-radius:15px 15px 15px 15px;
-        padding:20px;
-        margin:10px 10px 10px 0px;
-        h3{
-          margin:0px;
-        }
-      }
-    }
-  }
-  .accompagnementprix{
-    display:flex;
-    justify-content:space-between;
-    h4{
-      display:flex;
-      margin:0px;
-      font-weight:normal ;
-    }
-  }
-  .prix{
-    display:flex; 
-    @include bold; 
-  }
-  .categorie{
-    border-bottom:3px solid $tert-color ;
-  }
-  /*bouton commander*/
-  .btcommander{
-    justify-content: center;
-    display:flex;
-    padding-bottom:20px;
-    .commander{
-      display:flex;
-      width:150px;
-      height:35px;
-      background: linear-gradient($second-color,$prim-color);
+      padding:30px;
+      background-color: $quat-color;
       border-radius:20px;
-      justify-content: center;
-      align-items: center;
-      .textecommander{      
-        color:white;
+      box-shadow:2px 3px 10px rgb(216, 214, 214);
+      margin:0px 0px 20px 0px;
+      @include bold;
+      .iconefonct{
+        position:absolute;
+        left:50px;
       }
     }
   }
 }
+.rond{
+  position:absolute;
+  left:-7px;
+  border-radius:100px;
+  background-color: $prim-color;
+  width:20px;
+  .nombre{
+    display:flex;
+    justify-content:center;
+    color:white;
+    font-weight: normal;
+  }
+}   
+.textetape{
+  position:absolute;
+  left:80px;
+}      
+
+/*restaurants*/
+.h2restaurants{
+  margin:0px 0px 20px 20px;
+}
+.restaurants{
+  background-color: $quat-color;
+  width:100%;
+  padding:30px 0px 40px 0px;
+  .cartesresto{
+    width:100%;
+    .carte{
+      display:block;
+      width:100%;
+      margin:0px;
+    }
+  }
+}
+.figure{
+  margin:0px 15px 30px 15px;
+  background-color:white;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow:2px 3px 5px rgb(216, 214, 214) ;
+  position:relative;
+  .photoresto{
+    display:flex;
+    object-fit: cover;
+    width:100%;
+    max-height:200px;
+    border-radius:15px 15px 0px 0px;
+  }
+}
+.sticker{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  position:absolute;
+  width:70px;
+  height:25px;
+  top:5%;
+  right:5%;
+  background-color:$tert-color;
+  color:#318570;
+  font-weight: bold;
+  border-radius:2px;
+}
+.figresto{
+  position:relative;
+  padding-bottom:10px;
+  .heart{
+    position:absolute;
+    right:5%;
+    top:30%; 
+  }
+}
+.nomsresto{
+  margin:0px;
+  padding:10px 0px 0px 10px;
+}
+.villerest{
+  margin:0px 0px 10px 10px;
+  
+
+}
+/*footer*/
+.footer{
+  margin:auto;
+  max-width:900px;
+  background-color:rgb(44, 43, 43);
+  color:white;
+  ul{
+    list-style-type:none;
+    padding-left: 20px;
+    padding-bottom:30px;
+    li{
+      padding:0px 0px 10px 0px;
+      .prodev{
+        margin-left:5px;
+      }
+    }
+  }  
+}
+.iconefoot{
+  width:20px;
+}
+.h3footer{
+  padding:20px 0px 0px 20px;
+  max-width:70%;
+  color:white;
+  font-family: 'Shrikhand', cursive;
+  margin:0px;
+}
+/*menus resto*/
+.containermenu{
+  background-color:rgba(241, 245, 244, 0.992);
+  max-width: 900px;
+  margin: auto;
+  width:100%;
+}
+.titrefleche{
+  display:flex;
+  padding:10px 10px 10px 10px;
+  width:100%;
+  .fleche{
+    display:flex;
+    align-items:center;
+  }
+}
+.titreresto{
+  display:flex;
+  justify-content: center;
+  margin:auto;
+  font-family: 'Shrikhand', cursive;
+} 
+/*header*/  
+
+.photomenu{
+  object-fit:cover;
+  width:100%; 
+}
+.restocoeur{
+  display:flex;
+  justify-content: space-between;
+  margin:10px 30px 10px 10px;
+  border-radius:20px 20px 0px 0px;
+  .coeur{
+    display:flex;
+    align-items: center;
+    margin:0px;
+  }
+}
+.h2nomresto{
+  display:flex;
+  align-items: center;
+  font-weight: bold;
+  margin:0px;
+}
+/*entrées plats desserts*/
+.entrees, .plats, .desserts{
+  padding:10px;
+  ul{
+    padding:0px;
+    li{
+      list-style-type: none;
+      background-color:white ;
+      border-radius:15px 15px 15px 15px;
+      padding:20px;
+      margin:0px 10px 10px 0px;
+      h3{
+        margin:0px;
+      }
+    }
+  }
+}
+.greenborder{
+  border-top:3px solid $tert-color;
+  width:40px;
+}
+.accompagnementprix{
+  display:flex;
+  justify-content:space-between;
+  h4{
+    display:flex;
+    margin:0px;
+    font-weight:normal ;
+  }
+}
+.prix{
+  display:flex; 
+  @include bold; 
+}
+
+/*bouton commander*/
+.btcommander{
+  justify-content: center;
+  display:flex;
+  padding-bottom:20px;
+  .commander{
+    display:flex;
+    width:150px;
+    height:35px;
+    background: linear-gradient($second-color,$prim-color);
+    border-radius:20px;
+    justify-content: center;
+    align-items: center;
+    .textecommander{      
+      color:white;
+    }
+  }
+}
+
