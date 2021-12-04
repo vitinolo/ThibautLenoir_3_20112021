@@ -1,9 +1,7 @@
 /*propriètés générales*/
 @charset "UTF-8";
-$prim-color:#9356DC;
-$second-color:#FF79DA;
-$tert-color:#99E2D0;
-$quat-color:rgba(241, 245, 244, 0.992);
+@import "./Utils/variables";
+
 @mixin bold {
   font-weight: bold;
 }
@@ -59,7 +57,6 @@ header {
     display: flex;
     justify-content: center;
     position:relative;
-    justify-content: center;
     background-color: #dad6d6;
     .iconloc{
       position:relative;
