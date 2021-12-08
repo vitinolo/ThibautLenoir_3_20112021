@@ -1,0 +1,19 @@
+{
+  "name": "thibautlenoir_3_20112021",
+  "version": "1.0.0",
+  "description": "ThibautLenoir_3_20112021",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch .sass/main.scss:css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitinolo/ThibautLenoir_3_20112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitinolo/ThibautLenoir_3_20112021/issues"
+  },
+  "homepage": "https://github.com/vitinolo/ThibautLenoir_3_20112021#readme"
+}
