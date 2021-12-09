@@ -28,23 +28,19 @@ header {
   justify-content: center;
   width: 100%;
 }
-header h1 {
-  -o-object-fit: cover;
-     object-fit: cover;
+header .logo {
+  object-fit: cover;
   display: flex;
   justify-content: center;
   margin: 20px 0px 20px 0px;
-  max-width: 70%;
-}
-header h1 img {
   max-width: 250px;
 }
 
 /*navigation*/
 .trouvestaville {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   background-color: rgba(241, 245, 244, 0.992);
   border-top: 3px solid #bbbaba;
 }
@@ -58,30 +54,37 @@ header h1 img {
   position: relative;
   left: 20px;
   top: 12px;
+  margin-right: 6px;
 }
 
 .autour {
+  font-size: 15px;
   max-width: 150px;
   padding: 15px;
   font-family: "roboto";
   text-align: center;
-  font-weight: bold;
   background-color: #dad6d6;
   border: none;
+  font-weight: bold;
 }
 
-.h2reservez {
+.reservez {
   display: flex;
   justify-content: center;
+  text-align: center;
   padding: 20px;
   margin: 0px;
+  font-weight: bold;
+}
+.reservez p {
+  text-align: center;
 }
 
 .decouvrez {
   display: flex;
+  text-align: center;
   justify-content: center;
   padding: 0px 20px 20px 20px;
-  margin-left: 50px;
 }
 
 .explorez {
@@ -109,11 +112,13 @@ header h1 img {
 
 /*selection*/
 .selection {
-  padding: 0px 0px 20px 0px;
+  padding: 15px;
 }
 
-.h2fonctionnement {
+.fonctionnement {
+  font-size: 25px;
   margin-left: 20px;
+  font-weight: bold;
 }
 
 .filtres {
@@ -137,7 +142,6 @@ header h1 img {
   border-radius: 20px;
   box-shadow: 2px 3px 10px #d8d6d6;
   margin: 0px 0px 20px 0px;
-  font-weight: bold;
 }
 .filtres ol li .iconefonct {
   position: absolute;
@@ -164,14 +168,16 @@ header h1 img {
 }
 
 /*restaurants*/
-.h2restaurants {
-  margin: 0px 0px 20px 20px;
+.restaurants2 {
+  font-size: 25px;
+  margin-left: 15px;
+  font-weight: bold;
 }
 
 .restaurants {
   background-color: rgba(241, 245, 244, 0.992);
   width: 100%;
-  padding: 30px 0px 10px 0px;
+  padding: 15px;
 }
 .restaurants .cartesresto {
   width: 100%;
@@ -191,8 +197,7 @@ header h1 img {
 }
 .figure .photoresto {
   display: flex;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   max-height: 200px;
   border-radius: 15px 15px 0px 0px;
@@ -225,6 +230,7 @@ header h1 img {
 }
 
 .nomsresto {
+  font-weight: bold;
   margin: 0px;
   padding: 10px 0px 0px 10px;
 }
@@ -233,8 +239,9 @@ header h1 img {
   margin: 0px 0px 10px 10px;
 }
 
-/*footer*/
+/*footer menu*/
 .footermenu {
+  height: 230px;
   margin: auto;
   max-width: 900px;
   background-color: #2c2b2b;
@@ -252,11 +259,7 @@ header h1 img {
   margin-left: 5px;
 }
 
-.iconefoot {
-  width: 20px;
-}
-
-.h3footer {
+.footer1 {
   padding: 20px 0px 0px 20px;
   max-width: 70%;
   color: white;
@@ -293,8 +296,7 @@ header h1 img {
 /*header*/
 .photomenu {
   position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -319,11 +321,12 @@ header h1 img {
   font-size: 30px;
 }
 
-.h2nomresto {
+.nomresto2 {
   display: flex;
   align-items: center;
-  font-weight: bold;
+  font-family: "Shrikhand", cursive;
   margin: 0px;
+  font-weight: bold;
 }
 
 /*entrées plats desserts*/
@@ -366,8 +369,8 @@ header h1 img {
 
 /*bouton commander*/
 .btcommander {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   padding-bottom: 20px;
 }
 .btcommander .commander {
@@ -407,4 +410,6 @@ header h1 img {
 }
 .footer ul li .prodev {
   margin-left: 5px;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

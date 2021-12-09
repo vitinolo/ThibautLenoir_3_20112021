@@ -9,7 +9,6 @@ body {
   width: 100%;
   font-family: 'Roboto', sans-serif;
 }
-
 .container {
   
   max-width:900px;
@@ -27,69 +26,63 @@ a {
 }
 
 /*header*/
-
 header {
-  display: flex;
-  justify-content: center;
+  @include flexcenter;
   width: 100%;
-  h1{
+  .logo{
     object-fit:cover;
-    display:flex;
-    justify-content: center;
+    @include flexcenter;
     margin:20px 0px 20px 0px;
-    max-width:70%;
-    img{
-      max-width:250px;
-    }
+    max-width:250px;
   }
 }
 
 /*navigation*/
 .trouvestaville {
-  display: flex;
+  @include flexcenter;
   flex-direction: column;
-  justify-content:center;
   background-color: $quat-color;
   border-top: 3px solid rgb(187, 186, 186);
   .location {
-    display: flex;
-    justify-content: center;
+    @include flexcenter;
     position:relative;
     background-color: #dad6d6;
     .iconloc{
       position:relative;
       left:20px;
       top:12px;
+      margin-right: 6px;
     }
   }
 }
 .autour {
+  font-size: 15px;
   max-width:150px;
   padding:15px;
   font-family:"roboto" ;
   text-align:center;
-  @include bold;
   background-color:#dad6d6 ;
   border:none;
+  @include bold;
 }
-
-.h2reservez {
-  display: flex;
-  justify-content: center;
+.reservez {
+  @include flexcenter;
+  text-align: center;
   padding:20px; 
   margin:0px;
+  @include bold;
+  p{
+    text-align:center;   
+  }
 }
-
 .decouvrez {
   display: flex;
+  text-align: center;
   justify-content: center;
   padding:0px 20px 20px 20px;
-  margin-left:50px;
   }
-
 .explorez {
-  display:flex;
-  justify-content: center;
+  @include flexcenter;
   max-width:220px;
   border:none;
   padding:15px;
@@ -111,10 +104,12 @@ header {
 
 /*selection*/
 .selection{
-  padding:0px 0px 20px 0px;
+  padding:15px;
 }
-.h2fonctionnement{
+.fonctionnement{
+  font-size: 25px;
   margin-left:20px;
+  @include bold;
 }
 .filtres{      
   display: flex;
@@ -127,15 +122,13 @@ header {
     padding:15px;
     li{
       position:relative;
-      display: flex;
-      justify-content: center; 
+      @include flexcenter;
       align-items: center;
       padding: 30px 30px 50px 30px;
       background-color: $quat-color;
       border-radius:20px;
       box-shadow:2px 3px 10px rgb(216, 214, 214);
       margin:0px 0px 20px 0px;
-      @include bold;
       .iconefonct{
         position:absolute;
         left:50px;
@@ -150,8 +143,7 @@ header {
   background-color: $prim-color;
   width:20px;
   .nombre{
-    display:flex;
-    justify-content:center;
+    @include flexcenter;
     color:white;
     font-weight: normal;
   }
@@ -162,13 +154,15 @@ header {
 }      
 
 /*restaurants*/
-.h2restaurants{
-  margin:0px 0px 20px 20px;
+.restaurants2{
+  font-size: 25px;
+  margin-left: 15px;
+  @include bold;
 }
 .restaurants{
   background-color: $quat-color;
   width:100%;
-  padding:30px 0px 10px 0px;
+  padding:15px;
   .cartesresto{
     width:100%;
     .carte{
@@ -193,8 +187,7 @@ header {
   }
 }
 .sticker{
-  display:flex;
-  justify-content:center;
+  @include flexcenter;
   align-items: center;
   position:absolute;
   width:70px;
@@ -217,42 +210,26 @@ header {
   }
 }
 .nomsresto{
+  @include bold;
   margin:0px;
   padding:10px 0px 0px 10px;
 }
 .villerest{
   margin:0px 0px 10px 10px;
 }
-/*footer*/
+/*footer menu*/
 .footermenu{
-  
-  margin:auto;
-  max-width:900px;
-  background-color:rgb(44, 43, 43);
-  color:white;
-  ul{
-    list-style-type:none;
-    padding-left: 20px;
-    padding-bottom:30px;
-    li{
-      padding:0px 0px 10px 0px;
-      .prodev{
-        margin-left:5px;
-      }
-    }
-  }  
+  height:230px;
+  @include footer;
 }
-
-.iconefoot{
-  width:20px;
-}
-.h3footer{
+.footer1{
   padding:20px 0px 0px 20px;
   max-width:70%;
   color:white;
   font-family: 'Shrikhand', cursive;
   margin:0px;
 }
+
 /*menus resto*/
 .containermenu{
   position:relative;
@@ -271,13 +248,11 @@ header {
   }
 }
 .titreresto{
-  display:flex;
-  justify-content: center;
+  @include flexcenter;
   margin:auto;
   font-family: 'Shrikhand', cursive;
 } 
 /*header*/  
-
 .photomenu{
   position:absolute;
   object-fit:cover;
@@ -302,12 +277,14 @@ header {
     font-size:30px;
   }
 }
-.h2nomresto{
+.nomresto2{
   display:flex;
   align-items: center;
-  @include bold;
+  font-family: 'Shrikhand', cursive;
   margin:0px;
+  @include bold;
 }
+
 /*entrées plats desserts*/
 .entrees, .plats, .desserts{
   padding:10px;
@@ -345,8 +322,7 @@ header {
 
 /*bouton commander*/
 .btcommander{
-  justify-content: center;
-  display:flex;
+  @include flexcenter;
   padding-bottom:20px;
   .commander{
     display:flex;
@@ -365,23 +341,10 @@ header {
   box-shadow:2px 3px 10px rgb(63, 62, 62);
   background:linear-gradient(#f381d3,#a66cec);
 }
+
 /*footer restaurants*/
 .footer{
   position:relative;
   bottom:-210px;
-  margin:auto;
-  max-width:900px;
-  background-color:rgb(44, 43, 43);
-  color:white;
-  ul{
-    list-style-type:none;
-    padding-left: 20px;
-    padding-bottom:30px;
-    li{
-      padding:0px 0px 10px 0px;
-      .prodev{
-        margin-left:5px;
-      }
-    }
-  }  
+  @include footer;
 }
