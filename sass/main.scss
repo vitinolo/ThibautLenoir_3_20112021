@@ -4,13 +4,11 @@
 @import "./_mixins.scss";
 
 body {
-  position:relative;
   margin: 0px;
   width: 100%;
   font-family: 'Roboto', sans-serif;
 }
-.container {
-  
+.container { 
   max-width:900px;
   margin: auto;
   width: 100%;
@@ -108,7 +106,7 @@ header {
 }
 .fonctionnement{
   font-size: 25px;
-  margin-left:20px;
+  margin:20px 0px 20px 20px;
   @include bold;
 }
 .filtres{      
@@ -347,4 +345,81 @@ header {
   position:relative;
   bottom:-210px;
   @include footer;
+}
+
+/*media queries tablette*/
+@media screen and(min-width: 768px) and (max-width:1281px) {
+  .container { 
+  max-width:1025px;
+  margin: auto;
+  width: 100%;
+  } 
+  /*menu selection*/
+  .filtres{      
+    display: flex;
+    ol{
+      flex-direction: row;
+      justify-content:space-between;
+      list-style-type: none;
+      width: 100%;
+      margin: auto;
+      padding:15px;
+      li{
+        width:30%;
+        position:relative;
+        @include flexcenter;
+        align-items: center;
+        padding: 30px 30px 50px 30px;
+        background-color: $quat-color;
+        border-radius:20px;
+        box-shadow:2px 3px 10px rgb(216, 214, 214);
+        margin:0px 0px 20px 0px;
+        .iconefonct{
+          position:absolute;
+          left:20px;
+        }  
+      }
+    }
+  }
+  .textetape{
+    position:absolute;
+    left:50px;
+  } 
+  /*menu restaurants*/
+  .restaurants{
+    background-color: $quat-color;
+    width:100%;
+    padding:15px 20px 15px 20px;
+    .cartesresto{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .carte{
+        display:flex;
+        display:block;
+        justify-content: space-between;
+        width:47%; 
+        margin:0px;
+      }
+    }
+  }
+  .restaurants2{
+    margin-left: 40px;
+  }
+  .footermenu{
+    max-width:1025px;
+  }
+}
+/*media queries desktop*/
+@media screen and(min-width:1281px) and (max-width:2000px) {
+  .container { 
+  max-width:1200px;
+  margin: auto;
+  width: 100%;
+  }
+  @include tabdesk;
+  .footermenu{
+    max-width:1200px;
+  }
+
 }

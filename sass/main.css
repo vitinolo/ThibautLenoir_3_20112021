@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /*propriètés générales*/
 body {
-  position: relative;
   margin: 0px;
   width: 100%;
   font-family: "Roboto", sans-serif;
@@ -118,7 +117,7 @@ header .logo {
 
 .fonctionnement {
   font-size: 25px;
-  margin-left: 20px;
+  margin: 20px 0px 20px 20px;
   font-weight: bold;
 }
 
@@ -413,4 +412,143 @@ header .logo {
 }
 .footer ul li .prodev {
   margin-left: 5px;
+}
+
+/*media queries tablette*/
+@media screen and (min-width: 768px) and (max-width: 1281px) {
+  .container {
+    max-width: 1025px;
+    margin: auto;
+    width: 100%;
+  }
+
+  /*menu selection*/
+  .filtres {
+    display: flex;
+  }
+  .filtres ol {
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+  }
+  .filtres ol li {
+    width: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 50px 30px;
+    background-color: rgba(241, 245, 244, 0.992);
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px #d8d6d6;
+    margin: 0px 0px 20px 0px;
+  }
+  .filtres ol li .iconefonct {
+    position: absolute;
+    left: 20px;
+  }
+
+  .textetape {
+    position: absolute;
+    left: 50px;
+  }
+
+  /*menu restaurants*/
+  .restaurants {
+    background-color: rgba(241, 245, 244, 0.992);
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+  }
+  .restaurants .cartesresto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants .cartesresto .carte {
+    display: flex;
+    display: block;
+    justify-content: space-between;
+    width: 47%;
+    margin: 0px;
+  }
+
+  .restaurants2 {
+    margin-left: 40px;
+  }
+
+  .footermenu {
+    max-width: 1025px;
+  }
+}
+/*media queries desktop*/
+@media screen and (min-width: 1281px) and (max-width: 2000px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+  }
+
+  /*menu selection*/
+  .filtres {
+    display: flex;
+  }
+  .filtres ol {
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+  }
+  .filtres ol li {
+    width: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 50px 30px;
+    background-color: rgba(241, 245, 244, 0.992);
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px #d8d6d6;
+    margin: 0px 0px 20px 0px;
+  }
+  .filtres ol li .iconefonct {
+    position: absolute;
+    left: 20px;
+  }
+
+  .textetape {
+    position: absolute;
+    left: 50px;
+  }
+
+  /*menu restaurants*/
+  .restaurants {
+    background-color: rgba(241, 245, 244, 0.992);
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+  }
+  .restaurants .cartesresto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants .cartesresto .carte {
+    display: flex;
+    display: block;
+    justify-content: space-between;
+    width: 47%;
+    margin: 0px;
+  }
+
+  .restaurants2 {
+    margin-left: 40px;
+  }
+
+  .footermenu {
+    max-width: 1200px;
+  }
 }/*# sourceMappingURL=main.css.map */
