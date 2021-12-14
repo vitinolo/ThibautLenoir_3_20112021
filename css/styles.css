@@ -259,14 +259,14 @@ header .logo {
 }
 
 .footer1 {
+  display: inline-block;
   padding: 20px 0px 0px 20px;
-  max-width: 70%;
   color: white;
   font-family: "Shrikhand", cursive;
   margin: 0px;
 }
 
-/*menus resto*/
+/*4 x menus resto*/
 .containermenu {
   position: relative;
   background-color: rgba(241, 245, 244, 0.992);
@@ -290,6 +290,7 @@ header .logo {
   justify-content: center;
   margin: auto;
   font-family: "Shrikhand", cursive;
+  font-size: 35px;
 }
 
 /*header*/
@@ -324,6 +325,7 @@ header .logo {
   display: flex;
   align-items: center;
   font-family: "Shrikhand", cursive;
+  font-size: 25px;
   margin: 0px;
   font-weight: bold;
 }
@@ -342,8 +344,9 @@ header .logo {
   padding: 20px;
   margin: 0px 10px 10px 0px;
 }
-.entrees ul li h3, .plats ul li h3, .desserts ul li h3 {
+.entrees ul li p, .plats ul li p, .desserts ul li p {
   margin: 0px;
+  font-weight: bold;
 }
 
 .greenborder {
@@ -355,8 +358,8 @@ header .logo {
   display: flex;
   justify-content: space-between;
 }
-.accompagnementprix h4 {
-  display: flex;
+
+.accompagnement {
   margin: 0px;
   font-weight: normal;
 }
@@ -393,7 +396,7 @@ header .logo {
 /*footer restaurants*/
 .footer {
   position: relative;
-  bottom: -210px;
+  bottom: -200px;
   margin: auto;
   max-width: 900px;
   background-color: #2c2b2b;
@@ -481,14 +484,18 @@ header .logo {
   }
 }
 /*media queries desktop*/
-@media screen and (min-width: 1281px) and (max-width: 2000px) {
+@media screen and (min-width: 1282px) and (max-width: 2000px) {
   .container {
     max-width: 1200px;
     margin: auto;
     width: 100%;
   }
 
-  /*menu selection*/
+  .footermenu {
+    max-width: 1200px;
+  }
+
+  /*menu selection (filtres et cartes restaurants) version tablette et desktop*/
   .filtres {
     display: flex;
   }
@@ -514,12 +521,12 @@ header .logo {
   }
   .filtres ol li .iconefonct {
     position: absolute;
-    left: 20px;
+    left: 40px;
   }
 
   .textetape {
     position: absolute;
-    left: 50px;
+    left: 80px;
   }
 
   /*menu restaurants*/
@@ -543,10 +550,6 @@ header .logo {
 
   .restaurants2 {
     margin-left: 40px;
-  }
-
-  .footermenu {
-    max-width: 1200px;
   }
 }
 

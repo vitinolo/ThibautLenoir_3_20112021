@@ -221,14 +221,14 @@ header {
   @include footer;
 }
 .footer1{
+  display:inline-block;
   padding:20px 0px 0px 20px;
-  max-width:70%;
   color:white;
   font-family: 'Shrikhand', cursive;
   margin:0px;
 }
 
-/*menus resto*/
+/*4 x menus resto*/
 .containermenu{
   position:relative;
   background-color:rgba(241, 245, 244, 0.992);
@@ -249,6 +249,7 @@ header {
   @include flexcenter;
   margin:auto;
   font-family: 'Shrikhand', cursive;
+  font-size: 35px;
 } 
 /*header*/  
 .photomenu{
@@ -279,6 +280,7 @@ header {
   display:flex;
   align-items: center;
   font-family: 'Shrikhand', cursive;
+  font-size: 25px;
   margin:0px;
   @include bold;
 }
@@ -294,8 +296,9 @@ header {
       border-radius:15px 15px 15px 15px;
       padding:20px;
       margin:0px 10px 10px 0px;
-      h3{
+      p{
         margin:0px;
+        @include bold;
       }
     }
   }
@@ -307,11 +310,10 @@ header {
 .accompagnementprix{
   display:flex;
   justify-content:space-between;
-  h4{
-    display:flex;
-    margin:0px;
-    font-weight:normal ;
-  }
+}
+.accompagnement{ 
+  margin:0px;
+  font-weight:normal ;
 }
 .prix{
   display:flex; 
@@ -343,7 +345,7 @@ header {
 /*footer restaurants*/
 .footer{
   position:relative;
-  bottom:-210px;
+  bottom:-200px;
   @include footer;
 }
 
@@ -411,16 +413,15 @@ header {
   }
 }
 /*media queries desktop*/
-@media screen and(min-width:1281px) and (max-width:2000px) {
+@media screen and(min-width:1282px) and (max-width:2000px) {
   .container { 
   max-width:1200px;
   margin: auto;
   width: 100%;
   }
-  
-  @include tabdesk;
   .footermenu{
     max-width:1200px;
   }
-
+  @import "./_partiels.scss";
+  
 }

@@ -2,77 +2,23 @@
   font-weight: bold;
 }
 @mixin footer{
-margin:auto;
-max-width:900px;
-background-color:rgb(44, 43, 43);
-color:white;
-ul{
-  list-style-type:none;
-  padding-left: 20px;
-  padding-bottom:30px;
-  li{
-    padding:0px 0px 10px 0px;
-    .prodev{
-      margin-left:5px;
+  margin:auto;
+  max-width:900px;
+  background-color:rgb(44, 43, 43);
+  color:white;
+  ul{
+    list-style-type:none;
+    padding-left: 20px;
+    padding-bottom:30px;
+    li{
+      padding:0px 0px 10px 0px;
+      .prodev{
+        margin-left:5px;
+      }
     }
   }
-}
 }
 @mixin flexcenter{
 display:flex;
 justify-content: center;
-}
-@mixin tabdesk{
-/*menu selection*/
-.filtres{      
-  display: flex;
-  ol{
-    flex-direction: row;
-    justify-content:space-between;
-    list-style-type: none;
-    width: 100%;
-    margin: auto;
-    padding:15px;
-    li{
-      width:30%;
-      position:relative;
-      @include flexcenter;
-      align-items: center;
-      padding: 30px 30px 50px 30px;
-      background-color: $quat-color;
-      border-radius:20px;
-      box-shadow:2px 3px 10px rgb(216, 214, 214);
-      margin:0px 0px 20px 0px;
-      .iconefonct{
-        position:absolute;
-        left:20px;
-      }  
-    }
-  }
-}
-.textetape{
-  position:absolute;
-  left:50px;
-} 
-/*menu restaurants*/
-.restaurants{
-  background-color: $quat-color;
-  width:100%;
-  padding:15px 20px 15px 20px;
-  .cartesresto{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .carte{
-      display:flex;
-      display:block;
-      justify-content: space-between;
-      width:47%; 
-      margin:0px;
-    }
-  }
-}
-.restaurants2{
-  margin-left: 40px;
-}
 }
