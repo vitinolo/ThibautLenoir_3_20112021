@@ -348,7 +348,7 @@ header {
 }
 
 /*media queries tablette*/
-@media screen and(min-width: 768px) and (max-width:2000px) {
+@media screen and(min-width: 768px) and (max-width:1281px) {
   .container { 
   max-width:1025px;
   margin: auto;
@@ -411,3 +411,15 @@ header {
   }
 }
 /*media queries desktop*/
+@media screen and(min-width:1281px) and (max-width:2000px) {
+  .container { 
+  max-width:1200px;
+  margin: auto;
+  width: 100%;
+  }
+  @include tabdesk;
+  .footermenu{
+    max-width:1200px;
+  }
+
+}
