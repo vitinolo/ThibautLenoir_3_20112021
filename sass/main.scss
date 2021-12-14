@@ -376,14 +376,14 @@ header {
         margin:0px 0px 20px 0px;
         .iconefonct{
           position:absolute;
-          left:20px;
+          left:40px;
         }  
       }
     }
   }
   .textetape{
     position:absolute;
-    left:50px;
+    left:80px;
   } 
   /*menu restaurants*/
   .restaurants{
@@ -417,6 +417,7 @@ header {
   margin: auto;
   width: 100%;
   }
+  
   @include tabdesk;
   .footermenu{
     max-width:1200px;
