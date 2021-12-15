@@ -1,5 +1,101 @@
 @charset "UTF-8";
 /*propriètés générales*/
+.loader {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+.loader .loader__mot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.syllabe {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.oh {
+  color: #99E2D0;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+}
+
+.my {
+  color: #9356DC;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+}
+
+.food {
+  color: #FF79DA;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+}
+
+@-webkit-keyframes oh {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+@keyframes oh {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+@-webkit-keyframes my {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes my {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+@-webkit-keyframes food {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+@keyframes food {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
 body {
   margin: 0px;
   width: 100%;
@@ -9,7 +105,7 @@ body {
 .container {
   max-width: 900px;
   margin: auto;
-  width: 100%;
+  z-index: 2;
 }
 
 * {

@@ -1,56 +1,57 @@
 
-    /*menu selection (filtres et cartes restaurants) version tablette et desktop*/
-  
-    .filtres{      
-      display: flex;
-      ol{
-        flex-direction: row;
-        justify-content:space-between;
-        list-style-type: none;
-        width: 100%;
-        margin: auto;
-        padding:15px;
-        li{
-          width:30%;
-          position:relative;
-          @include flexcenter;
-          align-items: center;
-          padding: 30px 30px 50px 30px;
-          background-color: $quat-color;
-          border-radius:20px;
-          box-shadow:2px 3px 10px rgb(216, 214, 214);
-          margin:0px 0px 20px 0px;
-          .iconefonct{
-            position:absolute;
-            left:40px;
-          }  
-        }
-      }
-    }
-    .textetape{
-      position:absolute;
-      left:80px;
-    } 
-    /*menu restaurants*/
-    .restaurants{
+/*menu selection (filtres et cartes restaurants) version tablette et desktop*/
+
+.filtres{      
+  display: flex;
+  ol{
+    flex-direction: row;
+    justify-content:space-between;
+    list-style-type: none;
+    width: 100%;
+    margin: auto;
+    padding:15px;
+    li{
+      width:30%;
+      position:relative;
+      @include flexcenter;
+      align-items: center;
+      padding: 30px 30px 50px 30px;
       background-color: $quat-color;
-      width:100%;
-      padding:15px 20px 15px 20px;
-      .cartesresto{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        .carte{
-          display:flex;
-          display:block;
-          justify-content: space-between;
-          width:47%; 
-          margin:0px;
-        }
-      }
+      border-radius:20px;
+      box-shadow:2px 3px 10px rgb(216, 214, 214);
+      margin:0px 0px 20px 0px;
+      .iconefonct{
+        position:absolute;
+        left:40px;
+      }  
     }
-    .restaurants2{
-      margin-left: 40px;
+  }
+}
+.textetape{
+  position:absolute;
+  left:80px;
+} 
+/*menu restaurants*/
+
+.restaurants{
+  background-color: $quat-color;
+  width:100%;
+  padding:15px 20px 15px 20px;
+  .cartesresto{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .carte{
+      display:flex;
+      display:block;
+      justify-content: space-between;
+      width:47%; 
+      margin:0px;
     }
-  
+  }
+}
+.restaurants2{
+  margin-left: 40px;
+}
+
   

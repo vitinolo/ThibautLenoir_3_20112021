@@ -2,7 +2,7 @@
 @charset "UTF-8";
 @import "./_variables.scss";
 @import "./_mixins.scss";
-
+@import "./_loader.scss";
 body {
   margin: 0px;
   width: 100%;
@@ -11,7 +11,7 @@ body {
 .container { 
   max-width:900px;
   margin: auto;
-  width: 100%;
+  z-index:2 ;
 }
 
 * {

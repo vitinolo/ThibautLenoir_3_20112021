@@ -1,0 +1,60 @@
+.loader{
+    @include flexcenter;
+    margin:auto;
+    height:100%;
+    width:100%;
+    .loader__mot{
+        @include flexcenter;
+        align-items: center;
+        z-index:3;
+        position:fixed;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        opacity:1;
+    }   
+}
+.syllabe{
+    font-family: "Shrikhand", cursive;
+    font-size: 30px;
+    animation-duration: 300ms;
+    animation-delay: 0.1s;    
+}
+.oh{
+    color:$tert-color;
+    animation-duration: 300ms;
+}
+.my{
+    color:$prim-color;
+    animation-duration: 300ms;
+}
+.food{
+    color:$second-color;
+    animation-duration: 300ms;
+}
+@keyframes oh{
+    0%{
+        transform:scale(1)
+    }
+    100%{
+        transform:scale(2)
+    }
+}
+@keyframes my{
+    0%{
+        transform:scale(1)
+    }
+    100%{
+        transform:scale(2)
+    }
+
+}
+@keyframes food{
+    0%{
+        transform:scale(1)
+    }
+    100%{
+        transform:scale(2)
+    }
+}
