@@ -1,5 +1,19 @@
 @charset "UTF-8";
 /*propriètés générales*/
+/*couleurs syllabes*/
+.oh {
+  color: #99E2D0;
+}
+
+.my {
+  color: #9356DC;
+}
+
+.food {
+  color: #FF79DA;
+}
+
+/*animation loader*/
 .loader {
   display: flex;
   justify-content: center;
@@ -7,75 +21,70 @@
   height: 100%;
   width: 100%;
 }
-.loader .loader__mot {
+.loader .ohmyfood {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 1;
-}
-
-.syllabe {
+  opacity: 0;
   font-family: "Shrikhand", cursive;
-  font-size: 30px;
-  animation-duration: 300ms;
-  animation-delay: 0.1s;
+  font-size: 100px;
+  animation: ohmyfood 1s cubic-bezier(0.6, 0.04, 0.98, 0.335) 3 none;
 }
 
-.oh {
-  color: #99E2D0;
-  animation-duration: 300ms;
+@keyframes ohmyfood {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+    z-index: 6;
+  }
+  98% {
+    filter: blur(0px);
+    opacity: 1;
+    z-index: 6;
+  }
+  100% {
+    opacity: 0;
+    z-index: 6;
+  }
+}
+.heart2 {
+  position: absolute;
+  right: 7.5%;
+  top: 32%;
+  font-size: 10px;
+}
+.heart2:hover {
+  background-color: #9356DC;
+  animation: roseheart2 1s linear;
 }
 
-.my {
-  color: #9356DC;
-  animation-duration: 300ms;
-}
-
-.food {
-  color: #FF79DA;
-  animation-duration: 300ms;
-}
-
-@keyframes oh {
+@keyframes roseheart2 {
   0% {
     transform: scale(1);
   }
-  100% {
+  50% {
     transform: scale(2);
   }
-}
-@keyframes my {
-  0% {
-    transform: scale(1);
-  }
   100% {
-    transform: scale(2);
-  }
-}
-@keyframes food {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(2);
+    transform: scale(3);
   }
 }
 body {
   margin: 0px;
   width: 100%;
   font-family: "Roboto", sans-serif;
+  z-index: 6;
 }
 
 .container {
   max-width: 900px;
   margin: auto;
-  z-index: 2;
+  position: relative;
 }
 
 * {

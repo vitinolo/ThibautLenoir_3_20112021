@@ -1,0 +1,11 @@
+/*header*/
+header {
+    @include flexcenter;
+    width: 100%;
+    .logo{
+      object-fit:cover;
+      @include flexcenter;
+      margin:20px 0px 20px 0px;
+      max-width:250px;
+    }
+  }

@@ -1,5 +1,19 @@
 @charset "UTF-8";
 /*propriètés générales*/
+/*couleurs syllabes*/
+.oh {
+  color: #99E2D0;
+}
+
+.my {
+  color: #9356DC;
+}
+
+.food {
+  color: #FF79DA;
+}
+
+/*animation loader*/
 .loader {
   display: flex;
   justify-content: center;
@@ -7,105 +21,101 @@
   height: 100%;
   width: 100%;
 }
-.loader .loader__mot {
+.loader .ohmyfood {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  opacity: 1;
-}
-
-.syllabe {
+  opacity: 0;
   font-family: "Shrikhand", cursive;
-  font-size: 30px;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  font-size: 100px;
+  -webkit-animation: ohmyfood 1s cubic-bezier(0.6, 0.04, 0.98, 0.335) 3 none;
+          animation: ohmyfood 1s cubic-bezier(0.6, 0.04, 0.98, 0.335) 3 none;
 }
 
-.oh {
-  color: #99E2D0;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-}
-
-.my {
-  color: #9356DC;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-}
-
-.food {
-  color: #FF79DA;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-}
-
-@-webkit-keyframes oh {
+@-webkit-keyframes ohmyfood {
   0% {
-    transform: scale(1);
+    filter: blur(12px);
+    opacity: 0;
+    z-index: 6;
+  }
+  98% {
+    filter: blur(0px);
+    opacity: 1;
+    z-index: 6;
   }
   100% {
-    transform: scale(2);
+    opacity: 0;
+    z-index: 6;
   }
 }
 
-@keyframes oh {
+@keyframes ohmyfood {
   0% {
-    transform: scale(1);
+    filter: blur(12px);
+    opacity: 0;
+    z-index: 6;
+  }
+  98% {
+    filter: blur(0px);
+    opacity: 1;
+    z-index: 6;
   }
   100% {
-    transform: scale(2);
+    opacity: 0;
+    z-index: 6;
   }
 }
-@-webkit-keyframes my {
+.heart2 {
+  position: absolute;
+  right: 7.5%;
+  top: 32%;
+  font-size: 10px;
+}
+.heart2:hover {
+  background-color: #9356DC;
+  -webkit-animation: roseheart2 1s linear;
+          animation: roseheart2 1s linear;
+}
+
+@-webkit-keyframes roseheart2 {
   0% {
     transform: scale(1);
   }
-  100% {
+  50% {
     transform: scale(2);
+  }
+  100% {
+    transform: scale(3);
   }
 }
-@keyframes my {
+
+@keyframes roseheart2 {
   0% {
     transform: scale(1);
   }
-  100% {
+  50% {
     transform: scale(2);
   }
-}
-@-webkit-keyframes food {
-  0% {
-    transform: scale(1);
-  }
   100% {
-    transform: scale(2);
-  }
-}
-@keyframes food {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(2);
+    transform: scale(3);
   }
 }
 body {
   margin: 0px;
   width: 100%;
   font-family: "Roboto", sans-serif;
+  z-index: 6;
 }
 
 .container {
   max-width: 900px;
   margin: auto;
-  z-index: 2;
+  position: relative;
 }
 
 * {
