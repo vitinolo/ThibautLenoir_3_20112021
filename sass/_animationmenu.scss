@@ -1,0 +1,133 @@
+/*animation entrées*/
+.entrees{
+    padding:10px;
+    opacity:0;
+    animation:apparait 1s both;
+    ul{
+      padding:0px;
+      li{
+        list-style-type: none;
+        background-color:white ;
+        border-radius:15px 15px 15px 15px;
+        padding:20px;
+        margin:0px 10px 10px 0px;
+        p{
+          margin:0px;
+          @include bold;
+        }
+      }
+    }
+  }
+  
+  @keyframes apparait{
+      0%{
+          opacity:0;
+      }
+      50%{
+          opacity:.5;
+      }
+      100%{
+          opacity:1;
+      }
+  }
+  .accompagnementprix{
+    display:flex;
+    justify-content:space-between;
+  }
+  .accompagnement{ 
+    margin:0px;
+    padding-top:10px;
+    font-weight:normal ;
+  }
+  .prix{
+    display:flex;
+    @include bold; 
+    padding-left: 10px;
+  }
+  /*animation plats*/
+ .plats{
+    padding:10px;
+    opacity:0;
+    animation:apparait 1s both;
+    animation-delay: .5s;
+    ul{
+      padding:0px;
+      li{
+        list-style-type: none;
+        background-color:white ;
+        border-radius:15px 15px 15px 15px;
+        padding:20px;
+        margin:0px 10px 10px 0px;
+        p{
+          margin:0px;
+          @include bold;
+        }
+      }
+    }
+  }
+  @keyframes apparait{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:.5;
+    }
+    100%{
+        opacity:1;
+    }
+}
+  .accompagnementprix{
+    display:flex;
+    justify-content:space-between;
+  }
+  .accompagnement{ 
+    margin:0px;
+    padding-top:10px;
+    font-weight:normal ;
+  }
+  .prix{
+    display:flex; 
+    @include bold; 
+  }
+  /*animation désserts*/
+ .desserts{
+    padding:10px;
+    opacity:0;
+    animation:apparait 1s both;
+    animation-delay: 1s;
+    ul{
+      padding:0px;
+      li{
+        list-style-type: none;
+        background-color:white ;
+        border-radius:15px 15px 15px 15px;
+        padding:20px;
+        margin:0px 10px 10px 0px;
+        p{
+          margin:0px;
+          @include bold;
+        }
+      }
+    }
+  }
+  @keyframes apparait{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:.5;
+    }
+    100%{
+        opacity:1;
+    }
+}
+  
+  .accompagnement{ 
+    margin:0px;
+    padding-top:10px;
+    font-weight:normal ;
+  }
+  .prix{
+    display:flex; 
+    @include bold; 
+  }

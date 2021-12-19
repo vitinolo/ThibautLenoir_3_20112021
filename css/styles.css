@@ -32,7 +32,7 @@
   right: 0;
   opacity: 0;
   font-family: "Shrikhand", cursive;
-  font-size: 100px;
+  font-size: 60px;
   animation: ohmyfood 1s cubic-bezier(0.6, 0.04, 0.98, 0.335) 3 none;
 }
 
@@ -402,29 +402,38 @@ header .logo {
 }
 
 /*entrées plats desserts*/
-.entrees, .plats, .desserts {
+/*animation entrées*/
+.entrees {
   padding: 10px;
+  opacity: 0;
+  animation: apparait 1s both;
 }
-.entrees ul, .plats ul, .desserts ul {
+.entrees ul {
   padding: 0px;
 }
-.entrees ul li, .plats ul li, .desserts ul li {
+.entrees ul li {
   list-style-type: none;
   background-color: white;
   border-radius: 15px 15px 15px 15px;
   padding: 20px;
   margin: 0px 10px 10px 0px;
 }
-.entrees ul li p, .plats ul li p, .desserts ul li p {
+.entrees ul li p {
   margin: 0px;
   font-weight: bold;
 }
 
-.greenborder {
-  border-top: 3px solid #99E2D0;
-  width: 40px;
+@keyframes apparait {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 .accompagnementprix {
   display: flex;
   justify-content: space-between;
@@ -432,11 +441,194 @@ header .logo {
 
 .accompagnement {
   margin: 0px;
+  padding-top: 10px;
   font-weight: normal;
 }
 
 .prix {
   display: flex;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+/*animation plats*/
+.plats {
+  padding: 10px;
+  opacity: 0;
+  animation: apparait 1s both;
+  animation-delay: 0.5s;
+}
+.plats ul {
+  padding: 0px;
+}
+.plats ul li {
+  list-style-type: none;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  padding: 20px;
+  margin: 0px 10px 10px 0px;
+}
+.plats ul li p {
+  margin: 0px;
+  font-weight: bold;
+}
+
+@keyframes apparait {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.accompagnementprix {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accompagnement {
+  margin: 0px;
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+.prix {
+  display: flex;
+  font-weight: bold;
+}
+
+/*animation désserts*/
+.desserts {
+  padding: 10px;
+  opacity: 0;
+  animation: apparait 1s both;
+  animation-delay: 1s;
+}
+.desserts ul {
+  padding: 0px;
+}
+.desserts ul li {
+  list-style-type: none;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  padding: 20px;
+  margin: 0px 10px 10px 0px;
+}
+.desserts ul li p {
+  margin: 0px;
+  font-weight: bold;
+}
+
+@keyframes apparait {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.accompagnement {
+  margin: 0px;
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+.prix {
+  display: flex;
+  font-weight: bold;
+}
+
+.entrees, .plats, .desserts {
+  padding: 10px;
+}
+.entrees ul, .plats ul, .desserts ul {
+  padding: 0px;
+}
+.entrees ul li, .plats ul li, .desserts ul li {
+  display: block;
+  list-style-type: none;
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  padding: 0px;
+  margin: 0px 10px 10px 0px;
+}
+.entrees ul li:hover, .plats ul li:hover, .desserts ul li:hover {
+  transition-duration: 2s;
+}
+.entrees ul li:hover .check, .plats ul li:hover .check, .desserts ul li:hover .check {
+  display: flex;
+  width: 60px;
+  height: 100%;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+}
+.entrees ul li:hover .check i, .plats ul li:hover .check i, .desserts ul li:hover .check i {
+  font-size: 25px;
+  color: white;
+  align-items: center;
+  margin: auto;
+  animation: rotate 1s;
+}
+.entrees ul li:hover .check i p, .plats ul li:hover .check i p, .desserts ul li:hover .check i p {
+  margin: 0px;
+  font-weight: bold;
+}
+
+.check i {
+  opacity: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+}
+.greenborder {
+  border-top: 3px solid #99E2D0;
+  width: 40px;
+}
+
+.accomprixcheck {
+  display: flex;
+  justify-content: space-between;
+}
+.accomprixcheck .accompagnementprix {
+  display: inline;
+  margin: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.accomprixcheck .accompagnementprix p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.accomprixcheck .accompagnementprix p .accompagnement {
+  margin: 0px;
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+.pricheck {
+  display: flex;
+  border-radius: 0px 15px 15px 0px;
+}
+.pricheck .prix {
+  display: flex;
+  align-items: center;
+  padding: 10px;
   font-weight: bold;
 }
 

@@ -280,38 +280,90 @@ a {
 }
 
 /*entrées plats desserts*/
+@import "./_animationmenu.scss";
 .entrees, .plats, .desserts{
   padding:10px;
   ul{
     padding:0px;
     li{
+      display:block;
       list-style-type: none;
       background-color:white ;
       border-radius:15px 15px 15px 15px;
-      padding:20px;
+      padding:0px;
       margin:0px 10px 10px 0px;
-      p{
-        margin:0px;
-        @include bold;
+      &:hover{
+        transition-duration: 2s;
+        .check{
+          display:flex;
+          width:60px;
+          height:100%;
+          background-color:$tert-color ;
+          border-radius:0px 15px 15px 0px;
+          i{ 
+            font-size: 25px;
+            color:white;
+            align-items: center;
+            margin:auto;
+            animation:rotate 1s;
+            p{
+              margin:0px;
+              @include bold;
+            }
+          }
+        }
       }
     }
   }
 }
+.check i{
+  opacity: 0;
+}
+@keyframes rotate{
+  from{
+    transform:rotate(0deg);
+    opacity:0;
+  }
+  to{
+    transform:rotate(-360deg);
+    opacity:1;
+  }
+}
+
 .greenborder{
   border-top:3px solid $tert-color;
   width:40px;
 }
-.accompagnementprix{
+.accomprixcheck{
   display:flex;
-  justify-content:space-between;
+  justify-content: space-between;
+  .accompagnementprix{
+    display:inline;
+    margin:10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    p{
+      overflow:hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      .accompagnement{ 
+        margin:0px;
+        padding-top:10px;
+        font-weight:normal ;
+      }
+    }
+  } 
 }
-.accompagnement{ 
-  margin:0px;
-  font-weight:normal ;
-}
-.prix{
-  display:flex; 
-  @include bold; 
+.pricheck{
+  display:flex;
+  border-radius:0px 15px 15px 0px;
+  .prix{
+    display:flex; 
+    align-items: center;
+    padding:10px;
+    @include bold; 
+  }
 }
 
 /*bouton commander*/
