@@ -294,7 +294,6 @@ header .logo {
 }
 .figresto .heart {
   position: absolute;
-  font-weight: bold white;
   right: 5%;
   top: 20%;
   font-size: 30px;
@@ -563,6 +562,25 @@ header .logo {
   font-weight: bold;
 }
 
+/*animation check menu*/
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+}
+@keyframes deplace {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}
 .entrees, .plats, .desserts {
   padding: 10px;
 }
@@ -579,7 +597,7 @@ header .logo {
   margin: 0px 10px 10px 0px;
 }
 .entrees ul li:hover .pricheck, .plats ul li:hover .pricheck, .desserts ul li:hover .pricheck {
-  animation: deplace 1s;
+  animation: deplace 1s both;
 }
 .entrees ul li:hover .pricheck .check, .plats ul li:hover .pricheck .check, .desserts ul li:hover .pricheck .check {
   display: flex;
@@ -602,31 +620,13 @@ header .logo {
 
 .check {
   position: relative;
-  left: 10px;
+  right: -15px;
 }
 
 .check i {
   opacity: 0;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-  to {
-    transform: rotate(-360deg);
-    opacity: 1;
-  }
-}
-@keyframes deplace {
-  0% {
-    transform: translatex(0);
-  }
-  100% {
-    transform: translateX(-10px);
-  }
-}
 .greenborder {
   border-top: 3px solid #99E2D0;
   width: 40px;

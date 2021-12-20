@@ -194,7 +194,6 @@ a {
   padding-bottom:20px;
   .heart{
     position:absolute;
-    font-weight: bold white;
     right:5%;
     top:20%;
     font-size:30px; 
@@ -282,6 +281,7 @@ a {
 
 /*entrées plats desserts*/
 @import "./_animationmenu.scss";
+@import "./animation-check.scss";
 .entrees, .plats, .desserts{
   padding:10px;
   ul{
@@ -295,7 +295,7 @@ a {
       padding:0px;
       margin:0px 10px 10px 0px;
       &:hover .pricheck{
-        animation: deplace 1s;
+        animation: deplace 1s both;
        .check{
         display:flex;
         width:60px;
@@ -311,39 +311,20 @@ a {
           p{
             margin:0px;
             @include bold;
+            }
           }
         }
       }
     }
   }
 }
-}
 .check{
   position:relative;
-  left: 10px;
+  right: -15px;
 }
 .check i{
   opacity: 0;
 }
-@keyframes rotate{
-  from{
-    transform:rotate(0deg);
-    opacity:0;
-  }
-  to{
-    transform:rotate(-360deg);
-    opacity:1;
-  }
-}
-@keyframes deplace{
-    0%{
-      transform:translatex(0);
-      }
-    100%{
-      transform: translateX(-10px);
-    }
-}
-
 
 .greenborder{
   border-top:3px solid $tert-color;
@@ -409,81 +390,4 @@ a {
   bottom:-200px;
   @include footer;
 }
-
-/*media queries tablette*/
-@media screen and(min-width: 768px) and (max-width:1281px) {
-  .container { 
-  max-width:1025px;
-  margin: auto;
-  width: 100%;
-  } 
-  /*menu selection*/
-  .filtres{      
-    display: flex;
-    ol{
-      flex-direction: row;
-      justify-content:space-between;
-      list-style-type: none;
-      width: 100%;
-      margin: auto;
-      padding:15px;
-      li{
-        width:30%;
-        position:relative;
-        @include flexcenter;
-        align-items: center;
-        padding: 30px 30px 50px 30px;
-        background-color: $quat-color;
-        border-radius:20px;
-        box-shadow:2px 3px 10px rgb(216, 214, 214);
-        margin:0px 0px 20px 0px;
-        .iconefonct{
-          position:absolute;
-          left:40px;
-        }  
-      }
-    }
-  }
-  .textetape{
-    position:absolute;
-    left:80px;
-  } 
-  /*menu restaurants*/
-  .restaurants{
-    background-color: $quat-color;
-    width:100%;
-    padding:15px 20px 15px 20px;
-    .cartesresto{
-      display:flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      .carte{
-        display:flex;
-        display:block;
-        justify-content: space-between;
-        width:47%; 
-        margin:0px;
-      }
-    }
-  }
-  .restaurants2{
-    margin-left: 40px;
-  }
-  .footermenu{
-    max-width:1025px;
-  }
-}
-/*media queries desktop*/
-@media screen and(min-width:1282px) and (max-width:2000px) {
-  .container { 
-  max-width:1200px;
-  margin: auto;
-  width: 100%;
-  }
-  
-  .footermenu{
-    max-width:1200px;
-  }
-  @import "./_partiels.scss";
-  
-}
+@import "./medias-queries";
