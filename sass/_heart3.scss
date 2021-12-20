@@ -1,18 +1,17 @@
-/*coeur page principale*/
-.heart2{
+/*coeur menu restaurants*/
+.heart3{
     display:none;
-    position:absolute;
+    position:relative;
+    right:100%;
+    top:3%;
     font-weight: bold ;
     color:$prim-color;
-    right:5%;
-    top:20%;
     font-size:30px;
     transform:scale(0.4);
     transition: transform .8s;
     opacity: 0;
     &:hover{
         opacity:1;
-        transform:scale(1);
+        transform:scale(1);      
     }
 }
-    

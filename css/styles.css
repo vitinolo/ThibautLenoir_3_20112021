@@ -52,6 +52,7 @@
     z-index: 6;
   }
 }
+/*coeur page principale*/
 .heart2 {
   display: none;
   position: absolute;
@@ -379,6 +380,24 @@ header .logo {
   padding: 15px;
 }
 
+/*coeur menu restaurants*/
+.heart3 {
+  display: none;
+  position: relative;
+  right: 100%;
+  top: 3%;
+  font-weight: bold;
+  color: #9356DC;
+  font-size: 30px;
+  transform: scale(0.4);
+  transition: transform 0.8s;
+  opacity: 0;
+}
+.heart3:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .restocoeur {
   display: flex;
   justify-content: space-between;
@@ -551,6 +570,7 @@ header .logo {
   padding: 0px;
 }
 .entrees ul li, .plats ul li, .desserts ul li {
+  overflow: hidden;
   display: block;
   list-style-type: none;
   background-color: white;
@@ -558,26 +578,31 @@ header .logo {
   padding: 0px;
   margin: 0px 10px 10px 0px;
 }
-.entrees ul li:hover, .plats ul li:hover, .desserts ul li:hover {
-  transition-duration: 2s;
+.entrees ul li:hover .pricheck, .plats ul li:hover .pricheck, .desserts ul li:hover .pricheck {
+  animation: deplace 1s;
 }
-.entrees ul li:hover .check, .plats ul li:hover .check, .desserts ul li:hover .check {
+.entrees ul li:hover .pricheck .check, .plats ul li:hover .pricheck .check, .desserts ul li:hover .pricheck .check {
   display: flex;
   width: 60px;
   height: 100%;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
 }
-.entrees ul li:hover .check i, .plats ul li:hover .check i, .desserts ul li:hover .check i {
+.entrees ul li:hover .pricheck .check i, .plats ul li:hover .pricheck .check i, .desserts ul li:hover .pricheck .check i {
   font-size: 25px;
   color: white;
   align-items: center;
   margin: auto;
-  animation: rotate 1s;
+  animation: rotate 1s forwards;
 }
-.entrees ul li:hover .check i p, .plats ul li:hover .check i p, .desserts ul li:hover .check i p {
+.entrees ul li:hover .pricheck .check i p, .plats ul li:hover .pricheck .check i p, .desserts ul li:hover .pricheck .check i p {
   margin: 0px;
   font-weight: bold;
+}
+
+.check {
+  position: relative;
+  left: 10px;
 }
 
 .check i {
@@ -592,6 +617,14 @@ header .logo {
   to {
     transform: rotate(-360deg);
     opacity: 1;
+  }
+}
+@keyframes deplace {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translateX(-10px);
   }
 }
 .greenborder {

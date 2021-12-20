@@ -75,7 +75,7 @@
     100%{
         opacity:1;
     }
-}
+  }
   .accompagnementprix{
     display:flex;
     justify-content:space-between;
@@ -90,7 +90,7 @@
     @include bold; 
   }
   /*animation désserts*/
- .desserts{
+  .desserts{
     padding:10px;
     opacity:0;
     animation:apparait 1s both;
@@ -120,7 +120,7 @@
     100%{
         opacity:1;
     }
-}
+  }
   
   .accompagnement{ 
     margin:0px;

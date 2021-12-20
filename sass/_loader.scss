@@ -15,17 +15,17 @@
   height:100%;
   width:100%;
   .ohmyfood{ 
-      @include flexcenter;
-      align-items: center;
-      position:fixed;
-      top:0;
-      left:0;
-      bottom:0;
-      right:0;
-      opacity:0;
-      font-family: "Shrikhand", cursive;
-      font-size: 60px;  
-      animation: ohmyfood 1s cubic-bezier(0.600, 0.040, 0.980, 0.335) 3 none;   
+    @include flexcenter;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    opacity:0;
+    font-family: "Shrikhand", cursive;
+    font-size: 60px;  
+    animation: ohmyfood 1s cubic-bezier(0.600, 0.040, 0.980, 0.335) 3 none;   
   }   
 }
 @keyframes ohmyfood {
