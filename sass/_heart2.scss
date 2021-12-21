@@ -7,7 +7,7 @@
     transform:scale(0.4);
     transition: transform .8s;
     opacity: 0;
-    background-color:linear-gradient(#f381d3,#a66cec);
+    color:$prim-color;
     &:hover{
         opacity:1;
         transform:scale(1);
