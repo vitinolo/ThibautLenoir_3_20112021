@@ -266,10 +266,13 @@ a {
   .coeur{
     display:flex;
     align-items: center;
-    margin:0px;
     font-size:30px;
   }
 }
+.heart25{
+  position:relative;
+  left:15px;
+  }
 .nomresto2{
   display:flex;
   align-items: center;

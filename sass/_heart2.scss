@@ -1,18 +1,16 @@
 /*coeur page principale*/
-.heart2{
-    display:none;
+.heart2 { 
     position:absolute;
-    font-weight: bold ;
-    color:$prim-color;
     right:5%;
     top:20%;
     font-size:30px;
     transform:scale(0.4);
     transition: transform .8s;
     opacity: 0;
+    background-color:linear-gradient(#f381d3,#a66cec);
     &:hover{
         opacity:1;
         transform:scale(1);
     }
 }
-    
+

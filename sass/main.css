@@ -22,6 +22,7 @@
   width: 100%;
 }
 .loader .ohmyfood {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,17 +34,17 @@
   opacity: 0;
   font-family: "Shrikhand", cursive;
   font-size: 60px;
-  -webkit-animation: ohmyfood 1s cubic-bezier(0.6, 0.04, 0.98, 0.335) 3 none;
-          animation: ohmyfood 1s cubic-bezier(0.6, 0.04, 0.98, 0.335) 3 none;
+  -webkit-animation: loading 1.3s cubic-bezier(0.6, 0.04, 0.98, 0.335) 3 none;
+          animation: loading 1.3s cubic-bezier(0.6, 0.04, 0.98, 0.335) 3 none;
 }
 
-@-webkit-keyframes ohmyfood {
+@-webkit-keyframes loading {
   0% {
     filter: blur(12px);
     opacity: 0;
     z-index: 6;
   }
-  98% {
+  90% {
     filter: blur(0px);
     opacity: 1;
     z-index: 6;
@@ -54,13 +55,13 @@
   }
 }
 
-@keyframes ohmyfood {
+@keyframes loading {
   0% {
     filter: blur(12px);
     opacity: 0;
     z-index: 6;
   }
-  98% {
+  90% {
     filter: blur(0px);
     opacity: 1;
     z-index: 6;
@@ -72,16 +73,14 @@
 }
 /*coeur page principale*/
 .heart2 {
-  display: none;
   position: absolute;
-  font-weight: bold;
-  color: #9356DC;
   right: 5%;
   top: 20%;
   font-size: 30px;
   transform: scale(0.4);
   transition: transform 0.8s;
   opacity: 0;
+  background-color: linear-gradient(#f381d3, #a66cec);
 }
 .heart2:hover {
   opacity: 1;
@@ -402,9 +401,8 @@ header .logo {
 
 /*coeur menu restaurants*/
 .heart3 {
-  display: none;
   position: relative;
-  right: 100%;
+  right: 52%;
   top: 3%;
   font-weight: bold;
   color: #9356DC;
@@ -427,8 +425,12 @@ header .logo {
 .restocoeur .coeur {
   display: flex;
   align-items: center;
-  margin: 0px;
   font-size: 30px;
+}
+
+.heart25 {
+  position: relative;
+  left: 15px;
 }
 
 .nomresto2 {
