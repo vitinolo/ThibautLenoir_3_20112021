@@ -199,7 +199,6 @@ a {
     font-size:30px; 
   }
 }
-
 .nomsresto{
   @include bold;
   margin:0px;
@@ -210,6 +209,8 @@ a {
 }
 /*footer menu*/
 .footermenu{
+  position:relative;
+  z-index:6;
   height:230px;
   @include footer;
 }
@@ -284,7 +285,6 @@ a {
 
 /*entrées plats desserts*/
 @import "./_animationmenu.scss";
-@import "./animation-check.scss";
 .entrees, .plats, .desserts{
   padding:10px;
   ul{
@@ -297,26 +297,27 @@ a {
       border-radius:15px 15px 15px 15px;
       padding:0px;
       margin:0px 10px 10px 0px;
-      &:hover .pricheck{
-        animation: deplace 1s both;
-       .check{
-        display:flex;
-        width:60px;
-        height:100%;
-        background-color:$tert-color ;
-        border-radius:0px 15px 15px 0px;
-        i{ 
-          font-size: 25px;
-          color:white;
-          align-items: center;
-          margin:auto;
-          animation:rotate 1s forwards ;
-          p{
-            margin:0px;
-            @include bold;
-            }
-          }
-        }
+    }
+  }
+}
+.entrees li, .plats li, .desserts li{
+  &:hover .pricheck{
+  animation: deplace 1s both;
+  .check{
+  display:flex;
+  width:60px;
+  height:100%;
+  background-color:$tert-color ;
+  border-radius:0px 15px 15px 0px;
+  i{ 
+    font-size: 25px;
+    color:white;
+    align-items: center;
+    margin:auto;
+    animation:rotate 1s forwards ;
+    p{
+      margin:0px;
+      @include bold;
       }
     }
   }
@@ -365,6 +366,7 @@ a {
   }
 }
 
+@import "./_medias-queries.scss";}
 /*bouton commander*/
 .btcommander{
   @include flexcenter;
@@ -393,4 +395,3 @@ a {
   bottom:-200px;
   @include footer;
 }
-@import "./medias-queries";
