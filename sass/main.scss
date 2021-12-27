@@ -3,7 +3,7 @@
 @import "./_variables.scss";
 @import "./_mixins.scss";
 @import "./_loader.scss";
-@import "./_heart2.scss";
+
 body {
   margin: 0px;
   width: 100%;
@@ -190,15 +190,14 @@ a {
   border-radius:2px;
 }
 .figresto{
+  display:flex;
+  justify-content: space-between;
   position:relative;
   padding-bottom:20px;
-  .heart{
-    position:absolute;
-    right:5%;
-    top:20%;
-    font-size:30px; 
-  }
+  padding-top: 10px;
 }
+@import "./coeur";
+
 .nomsresto{
   @include bold;
   margin:0px;
@@ -212,8 +211,8 @@ a {
   position:relative;
   z-index:6;
   height:230px;
-  @include footer;
 }
+@import "./footer.scss";
 .footer1{
   display:inline-block;
   padding:20px 0px 0px 20px;
@@ -258,22 +257,14 @@ a {
   border-radius: 30px 30px 0px 0px;
   padding:15px;
 }
-@import "./_heart3.scss";
+
 .restocoeur{
   display:flex;
   justify-content: space-between;
-  margin:10px 30px 10px 10px;
+  margin:10px;
   border-radius:20px 20px 0px 0px;
-  .coeur{
-    display:flex;
-    align-items: center;
-    font-size:30px;
-  }
 }
-.heart25{
-  position:relative;
-  left:15px;
-  }
+
 .nomresto2{
   display:flex;
   align-items: center;
@@ -393,5 +384,5 @@ a {
 .footer{
   position:relative;
   bottom:-200px;
-  @include footer;
 }
+@import "./footer";

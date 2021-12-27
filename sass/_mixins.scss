@@ -1,23 +1,7 @@
 @mixin bold{
   font-weight: bold;
 }
-@mixin footer{
-  margin:auto;
-  max-width:900px;
-  background-color:rgb(44, 43, 43);
-  color:white;
-  ul{
-    list-style-type:none;
-    padding-left: 20px;
-    padding-bottom:30px;
-    li{
-      padding:0px 0px 10px 0px;
-      .prodev{
-        margin-left:5px;
-      }
-    }
-  }
-}
+ 
 @mixin flexcenter{
 display:flex;
 justify-content: center;

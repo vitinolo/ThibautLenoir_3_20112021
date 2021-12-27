@@ -65,17 +65,7 @@
       }
     }
   }
-  @keyframes apparait{
-    0%{
-        opacity:0;
-    }
-    50%{
-        opacity:.5;
-    }
-    100%{
-        opacity:1;
-    }
-  }
+  
   .accompagnementprix{
     display:flex;
     justify-content:space-between;
@@ -108,17 +98,6 @@
           @include bold;
         }
       }
-    }
-  }
-  @keyframes apparait{
-    0%{
-        opacity:0;
-    }
-    50%{
-        opacity:.5;
-    }
-    100%{
-        opacity:1;
     }
   }
   

@@ -1,0 +1,23 @@
+.coeur{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .heart{
+    font-size:30px;
+  }
+  .heart2{ 
+    position:relative;
+    right:30px; 
+    font-size:30px;
+    transform:scale(0.4);
+    transition: transform .8s;
+    opacity: 0;
+    background: -moz-linear-gradient($second-color,$prim-color);
+    &:hover{
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        opacity:1;
+        transform:scale(1);
+    }
+  }

@@ -53,22 +53,6 @@
     z-index: 6;
   }
 }
-/*coeur page principale*/
-.heart2 {
-  position: absolute;
-  right: 5%;
-  top: 20%;
-  font-size: 30px;
-  transform: scale(0.4);
-  transition: transform 0.8s;
-  opacity: 0;
-  color: #9356DC;
-}
-.heart2:hover {
-  opacity: 1;
-  transform: scale(1);
-}
-
 body {
   margin: 0px;
   width: 100%;
@@ -288,14 +272,37 @@ header .logo {
 }
 
 .figresto {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   padding-bottom: 20px;
+  padding-top: 10px;
 }
-.figresto .heart {
-  position: absolute;
-  right: 5%;
-  top: 20%;
+
+.coeur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
   font-size: 30px;
+}
+
+.heart2 {
+  position: relative;
+  right: 30px;
+  font-size: 30px;
+  transform: scale(0.4);
+  transition: transform 0.8s;
+  opacity: 0;
+  background: -moz-linear-gradient(#FF79DA, #9356DC);
+}
+.heart2:hover {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .nomsresto {
@@ -313,6 +320,27 @@ header .logo {
   position: relative;
   z-index: 6;
   height: 230px;
+}
+
+.footer {
+  margin: auto;
+  max-width: 900px;
+  background-color: #2c2b2b;
+  color: white;
+}
+.footer ul {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.footer ul li {
+  padding: 0px 0px 10px 0px;
+}
+.footer ul li .prodev {
+  margin-left: 5px;
+}
+
+.footermenu {
   margin: auto;
   max-width: 900px;
   background-color: #2c2b2b;
@@ -380,38 +408,11 @@ header .logo {
   padding: 15px;
 }
 
-/*coeur menu restaurants*/
-.heart3 {
-  position: relative;
-  right: 52%;
-  top: 3%;
-  font-weight: bold;
-  color: #9356DC;
-  font-size: 30px;
-  transform: scale(0.4);
-  transition: transform 0.8s;
-  opacity: 0;
-}
-.heart3:hover {
-  opacity: 1;
-  transform: scale(1);
-}
-
 .restocoeur {
   display: flex;
   justify-content: space-between;
-  margin: 10px 30px 10px 10px;
+  margin: 10px;
   border-radius: 20px 20px 0px 0px;
-}
-.restocoeur .coeur {
-  display: flex;
-  align-items: center;
-  font-size: 30px;
-}
-
-.heart25 {
-  position: relative;
-  left: 15px;
 }
 
 .nomresto2 {
@@ -495,17 +496,6 @@ header .logo {
   font-weight: bold;
 }
 
-@keyframes apparait {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .accompagnementprix {
   display: flex;
   justify-content: space-between;
@@ -544,17 +534,6 @@ header .logo {
   font-weight: bold;
 }
 
-@keyframes apparait {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .accompagnement {
   margin: 0px;
   padding-top: 10px;
@@ -743,9 +722,6 @@ header .logo {
     margin: auto;
     width: 100%;
   }
-  .entrees li .footermenu, .plats li .footermenu, .desserts li .footermenu {
-    max-width: 1200px;
-  }
   .entrees li .filtres, .plats li .filtres, .desserts li .filtres {
     display: flex;
   }
@@ -797,6 +773,9 @@ header .logo {
   .entrees li .restaurants2, .plats li .restaurants2, .desserts li .restaurants2 {
     margin-left: 40px;
   }
+  .entrees li .footermenu, .plats li .footermenu, .desserts li .footermenu {
+    max-width: 1200px;
+  }
 }
 
 /*bouton commander*/
@@ -827,6 +806,9 @@ header .logo {
 .footer {
   position: relative;
   bottom: -200px;
+}
+
+.footer {
   margin: auto;
   max-width: 900px;
   background-color: #2c2b2b;
@@ -841,6 +823,24 @@ header .logo {
   padding: 0px 0px 10px 0px;
 }
 .footer ul li .prodev {
+  margin-left: 5px;
+}
+
+.footermenu {
+  margin: auto;
+  max-width: 900px;
+  background-color: #2c2b2b;
+  color: white;
+}
+.footermenu ul {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.footermenu ul li {
+  padding: 0px 0px 10px 0px;
+}
+.footermenu ul li .prodev {
   margin-left: 5px;
 }
 
