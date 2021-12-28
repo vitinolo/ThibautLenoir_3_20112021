@@ -142,7 +142,7 @@ a {
   position:absolute;
   left:80px;
 }      
-
+@import "./_medias-queries.scss";
 /*restaurants*/
 .restaurants2{
   font-size: 25px;
@@ -206,6 +206,7 @@ a {
 .villerest{
   margin:0px 0px 10px 10px;
 }
+@import "./_medias-queries.scss";
 /*footer menu*/
 .footermenu{
   position:relative;
@@ -357,7 +358,7 @@ a {
   }
 }
 
-@import "./_medias-queries.scss";}
+
 /*bouton commander*/
 .btcommander{
   @include flexcenter;
@@ -385,4 +386,4 @@ a {
   position:relative;
   bottom:-200px;
 }
-@import "./footer";
+@import "./footer";}

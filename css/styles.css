@@ -255,6 +255,144 @@ header .logo {
   left: 80px;
 }
 
+/*media queries tablette*/
+@media screen and (min-width: 768px) and (max-width: 1281px) {
+  .container {
+    max-width: 1025px;
+    margin: auto;
+    width: 100%;
+  }
+
+  /*menu selection*/
+  .filtres {
+    display: flex;
+  }
+  .filtres ol {
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+  }
+  .filtres ol li {
+    width: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 50px 30px;
+    background-color: rgba(241, 245, 244, 0.992);
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px #d8d6d6;
+    margin: 0px 0px 20px 0px;
+  }
+  .filtres ol li .iconefonct {
+    position: absolute;
+    left: 40px;
+  }
+
+  .textetape {
+    position: absolute;
+    left: 80px;
+  }
+
+  /*menu restaurants*/
+  .restaurants {
+    background-color: rgba(241, 245, 244, 0.992);
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+  }
+  .restaurants .cartesresto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants .cartesresto .carte {
+    display: flex;
+    display: block;
+    justify-content: space-between;
+    width: 47%;
+    margin: 0px;
+  }
+
+  .restaurants2 {
+    margin-left: 40px;
+  }
+
+  .footermenu {
+    max-width: 1025px;
+  }
+}
+/*media queries desktop*/
+@media screen and (min-width: 1282px) and (max-width: 2000px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+  }
+
+  /*menu selection (filtres et cartes restaurants) version tablette et desktop*/
+  .filtres {
+    display: flex;
+  }
+  .filtres ol {
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+  }
+  .filtres ol li {
+    width: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 50px 30px;
+    background-color: rgba(241, 245, 244, 0.992);
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px #d8d6d6;
+    margin: 0px 0px 20px 0px;
+  }
+  .filtres ol li .iconefonct {
+    position: absolute;
+    left: 40px;
+  }
+
+  .textetape {
+    position: absolute;
+    left: 80px;
+  }
+
+  /*menu restaurants*/
+  .restaurants {
+    background-color: rgba(241, 245, 244, 0.992);
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+  }
+  .restaurants .cartesresto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants .cartesresto .carte {
+    display: flex;
+    display: block;
+    justify-content: space-between;
+    width: 47%;
+    margin: 0px;
+  }
+
+  .restaurants2 {
+    margin-left: 40px;
+  }
+
+  .footermenu {
+    max-width: 1200px;
+  }
+}
 /*restaurants*/
 .restaurants2 {
   font-size: 25px;
@@ -350,6 +488,144 @@ header .logo {
   margin: 0px 0px 10px 10px;
 }
 
+/*media queries tablette*/
+@media screen and (min-width: 768px) and (max-width: 1281px) {
+  .container {
+    max-width: 1025px;
+    margin: auto;
+    width: 100%;
+  }
+
+  /*menu selection*/
+  .filtres {
+    display: flex;
+  }
+  .filtres ol {
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+  }
+  .filtres ol li {
+    width: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 50px 30px;
+    background-color: rgba(241, 245, 244, 0.992);
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px #d8d6d6;
+    margin: 0px 0px 20px 0px;
+  }
+  .filtres ol li .iconefonct {
+    position: absolute;
+    left: 40px;
+  }
+
+  .textetape {
+    position: absolute;
+    left: 80px;
+  }
+
+  /*menu restaurants*/
+  .restaurants {
+    background-color: rgba(241, 245, 244, 0.992);
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+  }
+  .restaurants .cartesresto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants .cartesresto .carte {
+    display: flex;
+    display: block;
+    justify-content: space-between;
+    width: 47%;
+    margin: 0px;
+  }
+
+  .restaurants2 {
+    margin-left: 40px;
+  }
+
+  .footermenu {
+    max-width: 1025px;
+  }
+}
+/*media queries desktop*/
+@media screen and (min-width: 1282px) and (max-width: 2000px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+  }
+
+  /*menu selection (filtres et cartes restaurants) version tablette et desktop*/
+  .filtres {
+    display: flex;
+  }
+  .filtres ol {
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+  }
+  .filtres ol li {
+    width: 30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 50px 30px;
+    background-color: rgba(241, 245, 244, 0.992);
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px #d8d6d6;
+    margin: 0px 0px 20px 0px;
+  }
+  .filtres ol li .iconefonct {
+    position: absolute;
+    left: 40px;
+  }
+
+  .textetape {
+    position: absolute;
+    left: 80px;
+  }
+
+  /*menu restaurants*/
+  .restaurants {
+    background-color: rgba(241, 245, 244, 0.992);
+    width: 100%;
+    padding: 15px 20px 15px 20px;
+  }
+  .restaurants .cartesresto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants .cartesresto .carte {
+    display: flex;
+    display: block;
+    justify-content: space-between;
+    width: 47%;
+    margin: 0px;
+  }
+
+  .restaurants2 {
+    margin-left: 40px;
+  }
+
+  .footermenu {
+    max-width: 1200px;
+  }
+}
 /*footer menu*/
 .footermenu {
   position: relative;
@@ -359,7 +635,7 @@ header .logo {
 
 .footer, .footermenu {
   margin: auto;
-  max-width: 900px;
+  width: 100%;
   background-color: #2c2b2b;
   color: white;
 }
@@ -599,8 +875,8 @@ header .logo {
 }
 
 .entrees li, .plats li, .desserts li {
-  /*media queries tablette*/
-  /*media queries desktop*/
+  /*bouton commander*/
+  /*footer restaurants*/
 }
 .entrees li:hover .pricheck, .plats li:hover .pricheck, .desserts li:hover .pricheck {
   animation: deplace 1s both;
@@ -665,144 +941,12 @@ header .logo {
   padding: 10px;
   font-weight: bold;
 }
-@media screen and (min-width: 768px) and (max-width: 1281px) {
-  .entrees li, .plats li, .desserts li {
-    /*menu selection*/
-    /*menu restaurants*/
-  }
-  .entrees li .container, .plats li .container, .desserts li .container {
-    max-width: 1025px;
-    margin: auto;
-    width: 100%;
-  }
-  .entrees li .filtres, .plats li .filtres, .desserts li .filtres {
-    display: flex;
-  }
-  .entrees li .filtres ol, .plats li .filtres ol, .desserts li .filtres ol {
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    width: 100%;
-    margin: auto;
-    padding: 15px;
-  }
-  .entrees li .filtres ol li, .plats li .filtres ol li, .desserts li .filtres ol li {
-    width: 30%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 30px 50px 30px;
-    background-color: rgba(241, 245, 244, 0.992);
-    border-radius: 20px;
-    box-shadow: 2px 3px 10px #d8d6d6;
-    margin: 0px 0px 20px 0px;
-  }
-  .entrees li .filtres ol li .iconefonct, .plats li .filtres ol li .iconefonct, .desserts li .filtres ol li .iconefonct {
-    position: absolute;
-    left: 40px;
-  }
-  .entrees li .textetape, .plats li .textetape, .desserts li .textetape {
-    position: absolute;
-    left: 80px;
-  }
-  .entrees li .restaurants, .plats li .restaurants, .desserts li .restaurants {
-    background-color: rgba(241, 245, 244, 0.992);
-    width: 100%;
-    padding: 15px 20px 15px 20px;
-  }
-  .entrees li .restaurants .cartesresto, .plats li .restaurants .cartesresto, .desserts li .restaurants .cartesresto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .entrees li .restaurants .cartesresto .carte, .plats li .restaurants .cartesresto .carte, .desserts li .restaurants .cartesresto .carte {
-    display: flex;
-    display: block;
-    justify-content: space-between;
-    width: 47%;
-    margin: 0px;
-  }
-  .entrees li .restaurants2, .plats li .restaurants2, .desserts li .restaurants2 {
-    margin-left: 40px;
-  }
-  .entrees li .footermenu, .plats li .footermenu, .desserts li .footermenu {
-    max-width: 1025px;
-  }
-}
-@media screen and (min-width: 1282px) and (max-width: 2000px) {
-  .entrees li, .plats li, .desserts li {
-    /*menu selection (filtres et cartes restaurants) version tablette et desktop*/
-    /*menu restaurants*/
-  }
-  .entrees li .container, .plats li .container, .desserts li .container {
-    max-width: 1200px;
-    margin: auto;
-    width: 100%;
-  }
-  .entrees li .filtres, .plats li .filtres, .desserts li .filtres {
-    display: flex;
-  }
-  .entrees li .filtres ol, .plats li .filtres ol, .desserts li .filtres ol {
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    width: 100%;
-    margin: auto;
-    padding: 15px;
-  }
-  .entrees li .filtres ol li, .plats li .filtres ol li, .desserts li .filtres ol li {
-    width: 30%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 30px 50px 30px;
-    background-color: rgba(241, 245, 244, 0.992);
-    border-radius: 20px;
-    box-shadow: 2px 3px 10px #d8d6d6;
-    margin: 0px 0px 20px 0px;
-  }
-  .entrees li .filtres ol li .iconefonct, .plats li .filtres ol li .iconefonct, .desserts li .filtres ol li .iconefonct {
-    position: absolute;
-    left: 40px;
-  }
-  .entrees li .textetape, .plats li .textetape, .desserts li .textetape {
-    position: absolute;
-    left: 80px;
-  }
-  .entrees li .restaurants, .plats li .restaurants, .desserts li .restaurants {
-    background-color: rgba(241, 245, 244, 0.992);
-    width: 100%;
-    padding: 15px 20px 15px 20px;
-  }
-  .entrees li .restaurants .cartesresto, .plats li .restaurants .cartesresto, .desserts li .restaurants .cartesresto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .entrees li .restaurants .cartesresto .carte, .plats li .restaurants .cartesresto .carte, .desserts li .restaurants .cartesresto .carte {
-    display: flex;
-    display: block;
-    justify-content: space-between;
-    width: 47%;
-    margin: 0px;
-  }
-  .entrees li .restaurants2, .plats li .restaurants2, .desserts li .restaurants2 {
-    margin-left: 40px;
-  }
-  .entrees li .footermenu, .plats li .footermenu, .desserts li .footermenu {
-    max-width: 1200px;
-  }
-}
-
-/*bouton commander*/
-.btcommander {
+.entrees li .btcommander, .plats li .btcommander, .desserts li .btcommander {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
 }
-.btcommander .commander {
+.entrees li .btcommander .commander, .plats li .btcommander .commander, .desserts li .btcommander .commander {
   display: flex;
   width: 150px;
   height: 35px;
@@ -811,36 +955,32 @@ header .logo {
   justify-content: center;
   align-items: center;
 }
-.btcommander .commander .textecommander {
+.entrees li .btcommander .commander .textecommander, .plats li .btcommander .commander .textecommander, .desserts li .btcommander .commander .textecommander {
   color: white;
 }
-
-.commander:hover {
+.entrees li .commander:hover, .plats li .commander:hover, .desserts li .commander:hover {
   box-shadow: 2px 3px 10px #3f3e3e;
   background: linear-gradient(#f381d3, #a66cec);
 }
-
-/*footer restaurants*/
-.footer {
+.entrees li .footer, .plats li .footer, .desserts li .footer {
   position: relative;
   bottom: -200px;
 }
-
-.footer, .footermenu {
+.entrees li .footer, .entrees li .footermenu, .plats li .footer, .plats li .footermenu, .desserts li .footer, .desserts li .footermenu {
   margin: auto;
-  max-width: 900px;
+  width: 100%;
   background-color: #2c2b2b;
   color: white;
 }
-.footer ul, .footermenu ul {
+.entrees li .footer ul, .entrees li .footermenu ul, .plats li .footer ul, .plats li .footermenu ul, .desserts li .footer ul, .desserts li .footermenu ul {
   list-style-type: none;
   padding-left: 20px;
   padding-bottom: 30px;
 }
-.footer ul li, .footermenu ul li {
+.entrees li .footer ul li, .entrees li .footermenu ul li, .plats li .footer ul li, .plats li .footermenu ul li, .desserts li .footer ul li, .desserts li .footermenu ul li {
   padding: 0px 0px 10px 0px;
 }
-.footer ul li .prodev, .footermenu ul li .prodev {
+.entrees li .footer ul li .prodev, .entrees li .footermenu ul li .prodev, .plats li .footer ul li .prodev, .plats li .footermenu ul li .prodev, .desserts li .footer ul li .prodev, .desserts li .footermenu ul li .prodev {
   margin-left: 5px;
 }
 
