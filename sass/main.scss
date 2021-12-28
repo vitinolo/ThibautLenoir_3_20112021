@@ -1,8 +1,9 @@
-/*propriètés générales*/
+
 @charset "UTF-8";
 @import "./_variables.scss";
 @import "./_mixins.scss";
 @import "./_loader.scss";
+@import "./_footer.scss";
 
 body {
   margin: 0px;
@@ -253,7 +254,7 @@ a {
 }
 .second{
   position:relative;
-  top:200px;
+  top:230px;
   background-color:rgba(241, 245, 244, 0.992);
   border-radius: 30px 30px 0px 0px;
   padding:15px;
@@ -294,22 +295,23 @@ a {
 }
 .entrees li, .plats li, .desserts li{
   &:hover .pricheck{
-  animation: deplace 1s both;
-  .check{
-  display:flex;
-  width:60px;
-  height:100%;
-  background-color:$tert-color ;
-  border-radius:0px 15px 15px 0px;
-  i{ 
-    font-size: 25px;
-    color:white;
-    align-items: center;
-    margin:auto;
-    animation:rotate 1s forwards ;
-    p{
-      margin:0px;
-      @include bold;
+    animation: deplace 1s both;
+    .check{
+      display:flex;
+      width:60px;
+      height:100%;
+      background-color:$tert-color ;
+      border-radius:0px 15px 15px 0px;
+      i{ 
+        font-size: 25px;
+        color:white;
+        align-items: center;
+        margin:auto;
+        animation:rotate 1s forwards ;
+        p{
+          margin:0px;
+          @include bold;
+        }
       }
     }
   }
@@ -358,7 +360,6 @@ a {
   }
 }
 
-
 /*bouton commander*/
 .btcommander{
   @include flexcenter;
@@ -381,9 +382,5 @@ a {
   background:linear-gradient(#f381d3,#a66cec);
 }
 
-/*footer restaurants*/
-.footer{
-  position:relative;
-  bottom:-200px;
-}
-@import "./footer";}
+
+
