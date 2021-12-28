@@ -1,0 +1,31 @@
+/*animation li apparaissent les uns après les autres*/
+@keyframes apparait{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:.5;
+    }
+    100%{
+        opacity:1;
+    }
+}
+/*animation rotation check menu*/
+@keyframes rotate{
+  from{
+    transform:rotate(0deg);
+    opacity:0;
+  }
+  to{
+    transform:rotate(-360deg);
+    opacity:1;
+  }
+}
+@keyframes deplace{
+    0%{
+      transform:translatex(0);
+      }
+    100%{
+      transform: translateX(-15px);
+    }
+}

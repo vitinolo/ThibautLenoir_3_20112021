@@ -15,13 +15,9 @@
 
 /*animation loader*/
 .loader {
-  display: flex;
-  justify-content: center;
   margin: auto;
   height: 100%;
   width: 100%;
-}
-.loader .ohmyfood {
   background-color: white;
   display: flex;
   justify-content: center;
@@ -29,18 +25,28 @@
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   opacity: 0;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+}
+.loader .ohmyfood {
+  display: flex;
   font-family: "Shrikhand", cursive;
   font-size: 60px;
-  animation: loading 1.3s cubic-bezier(0.6, 0.04, 0.98, 0.335) 3 none;
 }
 
 @keyframes loading {
   0% {
     filter: blur(12px);
     opacity: 0;
+    z-index: 6;
+  }
+  10% {
+    filter: blur(6px);
+    opacity: 0.2;
     z-index: 6;
   }
   90% {
@@ -50,6 +56,35 @@
   }
   100% {
     opacity: 0;
+    z-index: 6;
+  }
+}
+.container, .footermenu {
+  animation-name: loadingout;
+  animation-duration: 3.1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  z-index: -100;
+}
+
+@keyframes loadingout {
+  0% {
+    filter: blur(12px);
+    opacity: 0.2;
+    z-index: 6;
+  }
+  10% {
+    filter: blur(6px);
+    opacity: 0.2;
+    z-index: 6;
+  }
+  90% {
+    filter: blur(0px);
+    opacity: 0.2;
+    z-index: 6;
+  }
+  100% {
+    opacity: 1;
     z-index: 6;
   }
 }
@@ -322,39 +357,21 @@ header .logo {
   height: 230px;
 }
 
-.footer {
+.footer, .footermenu {
   margin: auto;
   max-width: 900px;
   background-color: #2c2b2b;
   color: white;
 }
-.footer ul {
+.footer ul, .footermenu ul {
   list-style-type: none;
   padding-left: 20px;
   padding-bottom: 30px;
 }
-.footer ul li {
+.footer ul li, .footermenu ul li {
   padding: 0px 0px 10px 0px;
 }
-.footer ul li .prodev {
-  margin-left: 5px;
-}
-
-.footermenu {
-  margin: auto;
-  max-width: 900px;
-  background-color: #2c2b2b;
-  color: white;
-}
-.footermenu ul {
-  list-style-type: none;
-  padding-left: 20px;
-  padding-bottom: 30px;
-}
-.footermenu ul li {
-  padding: 0px 0px 10px 0px;
-}
-.footermenu ul li .prodev {
+.footer ul li .prodev, .footermenu ul li .prodev {
   margin-left: 5px;
 }
 
@@ -425,6 +442,37 @@ header .logo {
 }
 
 /*entrées plats desserts*/
+/*animation li apparaissent les uns après les autres*/
+@keyframes apparait {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*animation rotation check menu*/
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+}
+@keyframes deplace {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translateX(-15px);
+  }
+}
 /*animation entrées*/
 .entrees {
   padding: 10px;
@@ -446,17 +494,6 @@ header .logo {
   font-weight: bold;
 }
 
-@keyframes apparait {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .accompagnementprix {
   display: flex;
   justify-content: space-between;
@@ -545,25 +582,6 @@ header .logo {
   font-weight: bold;
 }
 
-/*animation check menu*/
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-    opacity: 0;
-  }
-  to {
-    transform: rotate(-360deg);
-    opacity: 1;
-  }
-}
-@keyframes deplace {
-  0% {
-    transform: translatex(0);
-  }
-  100% {
-    transform: translateX(-15px);
-  }
-}
 .entrees, .plats, .desserts {
   padding: 10px;
 }
@@ -808,39 +826,21 @@ header .logo {
   bottom: -200px;
 }
 
-.footer {
+.footer, .footermenu {
   margin: auto;
   max-width: 900px;
   background-color: #2c2b2b;
   color: white;
 }
-.footer ul {
+.footer ul, .footermenu ul {
   list-style-type: none;
   padding-left: 20px;
   padding-bottom: 30px;
 }
-.footer ul li {
+.footer ul li, .footermenu ul li {
   padding: 0px 0px 10px 0px;
 }
-.footer ul li .prodev {
-  margin-left: 5px;
-}
-
-.footermenu {
-  margin: auto;
-  max-width: 900px;
-  background-color: #2c2b2b;
-  color: white;
-}
-.footermenu ul {
-  list-style-type: none;
-  padding-left: 20px;
-  padding-bottom: 30px;
-}
-.footermenu ul li {
-  padding: 0px 0px 10px 0px;
-}
-.footermenu ul li .prodev {
+.footer ul li .prodev, .footermenu ul li .prodev {
   margin-left: 5px;
 }
 
