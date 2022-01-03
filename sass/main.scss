@@ -4,6 +4,11 @@
 @import "./_mixins.scss";
 @import "./_loader.scss";
 @import "./_footer.scss";
+@import "./_header.scss";
+@import "./_medias-queries.scss";
+@import "./_animationmenu.scss";
+@import "./coeur";
+@import "./footer.scss";
 
 body {
   margin: 0px;
@@ -25,8 +30,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-@import "./_header.scss";
 
 /*navigation*/
 .trouvestaville {
@@ -143,7 +146,6 @@ a {
   position:absolute;
   left:80px;
 }      
-@import "./_medias-queries.scss";
 /*restaurants*/
 .restaurants2{
   font-size: 25px;
@@ -197,7 +199,6 @@ a {
   padding-bottom:20px;
   padding-top: 10px;
 }
-@import "./coeur";
 
 .nomsresto{
   @include bold;
@@ -214,7 +215,6 @@ a {
   z-index:6;
   height:230px;
 }
-@import "./footer.scss";
 .footer1{
   display:inline-block;
   padding:20px 0px 0px 20px;
@@ -235,6 +235,7 @@ a {
   display:flex;
   padding:10px 10px 10px 10px;
   width:100%;
+  background-color: white;
   .fleche{
     display:flex;
     align-items:center;
@@ -277,7 +278,6 @@ a {
 }
 
 /*entrées plats desserts*/
-@import "./_animationmenu.scss";
 .entrees, .plats, .desserts{
   padding:10px;
   ul{
