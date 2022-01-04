@@ -11,14 +11,15 @@
     right:30px; 
     font-size:30px;
     transform:scale(0.4);
-    transition: transform .8s;
     opacity: 0;
-    background: -moz-linear-gradient($second-color,$prim-color);
+    background: linear-gradient($second-color,$prim-color);
+    transition: transform cubic-bezier(.37,.39,.79,.78) 0.8s ;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    background-clip:text;
     &:hover{
-        background-clip: text;
-        -webkit-text-fill-color:transparent;
-        opacity:1;
-        transform:scale(1);
-        cursor:pointer;
+      opacity:1;
+      transform:scale(1);
+      cursor:pointer;
     }
   }

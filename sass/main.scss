@@ -8,6 +8,7 @@
 @import "./_medias-queries.scss";
 @import "./_animationmenu.scss";
 @import "./coeur";
+@import "./keyframes";
 @import "./footer.scss";
 
 body {
@@ -161,12 +162,12 @@ a {
     .carte{
       display:block;
       width:100%;
-      margin:0px;
+      margin-bottom:30px;
     }
   }
 }
 .figure{
-  margin:0px 15px 30px 15px;
+  margin:0px;
   background-color:white;
   border-radius: 15px 15px 15px 15px;
   box-shadow:2px 3px 5px rgb(216, 214, 214) ;
@@ -295,7 +296,10 @@ a {
 }
 .entrees li, .plats li, .desserts li{
   &:hover .pricheck{
-    animation: deplace 1s both;
+    animation-name: deplace ;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.08,.49,.83,.9);
+    animation-fill-mode: both;
     .check{
       display:flex;
       width:60px;
@@ -319,6 +323,7 @@ a {
 .check{
   position:relative;
   right: -15px;
+
 }
 .check i{
   opacity: 0;
@@ -341,13 +346,13 @@ a {
       overflow:hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      .accompagnement{ 
-        margin:0px;
-        padding-top:10px;
-        font-weight:normal ;
-      }
     }
   } 
+}
+.accompagnement{ 
+  margin:0px;
+  padding-top:10px;
+  font-weight:normal ;
 }
 .pricheck{
   display:flex;

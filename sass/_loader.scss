@@ -31,27 +31,7 @@
     font-size: 60px;  
   }   
 }
-@keyframes loading {
-  0% {
-    filter: blur(12px);
-    opacity: 0;
-    z-index: 6;
-  }
-  10%{
-    filter: blur(6px);
-    opacity: .2;
-    z-index: 6;
-  }
-  90% {
-    filter: blur(0px);
-    opacity: 1;
-    z-index: 6;
-  }
-  100% {
-      opacity:0;
-      z-index: 6;
-  }
-}
+
 .container,.footermenu{
   animation-name: loadingout;
   animation-duration: 3.1s;
@@ -59,25 +39,3 @@
   animation-fill-mode: forwards; 
   z-index:-100;
 }
-@keyframes loadingout{
-  0% {
-    filter: blur(12px);
-    opacity: 0.2;
-    z-index: 6;
-  }
-  10%{
-    filter: blur(6px);
-    opacity: 0.2;
-    z-index: 6;
-  }
-  90% {
-    filter: blur(0px);
-    opacity: 0.2;
-    z-index: 6;
-  }
-  100% {
-    opacity:1;
-    z-index: 6;
-  }
-}
-  

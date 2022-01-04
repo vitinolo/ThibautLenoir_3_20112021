@@ -1,6 +1,6 @@
-@import "./keyframes.scss";
-/*animation entrées*/
-.entrees{
+
+/*animation entrées plats desserts*/
+.entrees, .plats, .desserts{
   padding:10px;
   opacity:0;
   animation:apparait 1s both;
@@ -19,7 +19,6 @@
     }
   }
 }
-  
 .accompagnementprix{
   display:flex;
   justify-content:space-between;
@@ -34,70 +33,13 @@
   @include bold; 
   padding-left: 10px;
 }
-/*animation plats*/
+/* délai animation plats*/
 .plats{
-  padding:10px;
-  opacity:0;
-  animation:apparait 1s both;
   animation-delay: .5s;
-  ul{
-    padding:0px;
-    li{
-      list-style-type: none;
-      background-color:white ;
-      border-radius:15px 15px 15px 15px;
-      padding:20px;
-      margin:0px 10px 10px 0px;
-      p{
-        margin:0px;
-        @include bold;
-      }
-    }
-  }
 }
   
-.accompagnementprix{
-  display:flex;
-  justify-content:space-between;
-}
-.accompagnement{ 
-  margin:0px;
-  padding-top:10px;
-  font-weight:normal ;
-}
-.prix{
-  display:flex; 
-  @include bold; 
-}
-/*animation désserts*/
+/*délai animation désserts*/
 .desserts{
-  padding:10px;
-  opacity:0;
-  animation:apparait 1s both;
   animation-delay: 1s;
-  ul{
-    padding:0px;
-    li{
-      list-style-type: none;
-      background-color:white ;
-      border-radius:15px 15px 15px 15px;
-      padding:20px;
-      margin:0px 10px 10px 0px;
-      p{
-        margin:0px;
-        @include bold;
-      }
-    }
-  }
 }
 
-.accompagnement{ 
-  margin:0px;
-  padding-top:10px;
-  font-weight:normal ;
-}
-.prix{
-  display:flex; 
-  @include bold; 
-}
- 
