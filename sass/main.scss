@@ -30,8 +30,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-/*navigation*/
+/*accueil navigation*/
 .trouvestaville {
   @include flexcenter;
   flex-direction: column;
@@ -96,7 +95,7 @@ a {
   font-weight: bold;
 }
 
-/*selection*/
+/*accueil selection*/
 .selection{
   padding:15px;
 }
@@ -146,7 +145,7 @@ a {
   position:absolute;
   left:80px;
 }      
-/*restaurants*/
+/*accueil restaurants*/
 .restaurants2{
   font-size: 25px;
   margin-left: 15px;
@@ -209,7 +208,7 @@ a {
   margin:0px 0px 10px 10px;
 }
 @import "./_medias-queries.scss";
-/*footer menu*/
+/*accueil footer menu*/
 .footermenu{
   position:relative;
   z-index:6;
@@ -223,7 +222,7 @@ a {
   margin:0px;
 }
 
-/*4 x menus resto*/
+/*4 x pages menus resto*/
 .containermenu{
   position:relative;
   background-color:rgba(241, 245, 244, 0.992);
